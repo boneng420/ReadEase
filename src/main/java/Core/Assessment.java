@@ -13,10 +13,6 @@ import javax.swing.*;
  */
 public class Assessment extends javax.swing.JFrame {
 
-    private JLabel[] questionLabels;
-    private JLabel[] answerLabels;
-    private int currentIndex = 0;
-
     /**
      * Creates new form Assessment2
      */
