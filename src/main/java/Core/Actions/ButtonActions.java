@@ -174,4 +174,8 @@ public class ButtonActions {
             textToSpeechToggleButton.setForeground(null);
         }
     }
+
+    public static void resetToggleButton(JToggleButton toggleButton) {
+        toggleButton.setSelected(false);
+    }
 }
