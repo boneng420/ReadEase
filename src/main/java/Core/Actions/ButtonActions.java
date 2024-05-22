@@ -150,8 +150,9 @@ public class ButtonActions {
         }
     }
 
-    public static void checkAnswerAndNext(String[] correctWords, String userAnswer, JTabbedPane tabbedPane, JTextArea textArea) {
-        String correctAnswer = String.join(" ", correctWords);
+    public static void checkAnswerAndNext(String[] correctWords, String userAnswer, JTabbedPane tabbedPane, JTextArea textArea, boolean useDelimiter) {
+        String delimiter = useDelimiter ? " " : "";
+        String correctAnswer = String.join(delimiter, correctWords);
         if (userAnswer.equalsIgnoreCase(correctAnswer)) {
             JOptionPane.showMessageDialog(null, "Correct!");
             int selectedIndex = tabbedPane.getSelectedIndex();
@@ -173,9 +174,5 @@ public class ButtonActions {
             textToSpeechToggleButton.setBackground(null);
             textToSpeechToggleButton.setForeground(null);
         }
-    }
-
-    public static void resetToggleButton(JToggleButton toggleButton) {
-        toggleButton.setSelected(false);
     }
 }

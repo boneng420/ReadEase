@@ -973,8 +973,7 @@ public class OralAssessment extends javax.swing.JFrame {
     private void nextButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_nextButton1ActionPerformed
         // TODO add your handling code here:String correctAnswer = "The net is wet";
         String userAnswer = textArea1.getText().trim();
-        ButtonActions.checkAnswerAndNext(q1Words, userAnswer, assessmentTabbedPane, textArea1);
-        ButtonActions.resetToggleButton(textToSpeechToggleButton1);
+        ButtonActions.checkAnswerAndNext(q1Words, userAnswer, assessmentTabbedPane, textArea1, true);
     }//GEN-LAST:event_nextButton1ActionPerformed
 
     private void textToSpeechToggleButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_textToSpeechToggleButton1ActionPerformed
@@ -1019,8 +1018,7 @@ public class OralAssessment extends javax.swing.JFrame {
     private void nextButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_nextButton2ActionPerformed
         // TODO add your handling code here:
         String userAnswer = textArea2.getText().trim();
-        ButtonActions.checkAnswerAndNext(q2Words, userAnswer, assessmentTabbedPane, textArea2);
-        ButtonActions.resetToggleButton(textToSpeechToggleButton2);
+        ButtonActions.checkAnswerAndNext(q2Words, userAnswer, assessmentTabbedPane, textArea2, true);
     }//GEN-LAST:event_nextButton2ActionPerformed
 
     private void textToSpeechToggleButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_textToSpeechToggleButton2ActionPerformed
@@ -1077,8 +1075,7 @@ public class OralAssessment extends javax.swing.JFrame {
     private void nextButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_nextButton3ActionPerformed
         // TODO add your handling code here:
         String userAnswer = textArea3.getText().trim();
-        ButtonActions.checkAnswerAndNext(q3Words, userAnswer, assessmentTabbedPane, textArea3);
-        ButtonActions.resetToggleButton(textToSpeechToggleButton3);
+        ButtonActions.checkAnswerAndNext(q3Words, userAnswer, assessmentTabbedPane, textArea3,true);
     }//GEN-LAST:event_nextButton3ActionPerformed
 
     private void textToSpeechToggleButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_textToSpeechToggleButton3ActionPerformed
@@ -1129,8 +1126,7 @@ public class OralAssessment extends javax.swing.JFrame {
     private void nextButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_nextButton4ActionPerformed
         // TODO add your handling code here:
         String userAnswer = textArea4.getText().trim();
-        ButtonActions.checkAnswerAndNext(q4Words, userAnswer, assessmentTabbedPane, textArea4);
-        ButtonActions.resetToggleButton(textToSpeechToggleButton4);
+        ButtonActions.checkAnswerAndNext(q4Words, userAnswer, assessmentTabbedPane, textArea4, true);
     }//GEN-LAST:event_nextButton4ActionPerformed
 
     private void textToSpeechToggleButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_textToSpeechToggleButton4ActionPerformed
@@ -1175,8 +1171,7 @@ public class OralAssessment extends javax.swing.JFrame {
         private void nextButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_nextButton5ActionPerformed
                 // TODO add your handling code here:
                 String userAnswer = textArea5.getText().trim();
-                ButtonActions.checkAnswerAndNext(q5Words, userAnswer, assessmentTabbedPane, textArea5);
-                ButtonActions.resetToggleButton(textToSpeechToggleButton5);
+                ButtonActions.checkAnswerAndNext(q5Words, userAnswer, assessmentTabbedPane, textArea5, true);
         }//GEN-LAST:event_nextButton5ActionPerformed
 
         private void textToSpeechToggleButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_textToSpeechToggleButton5ActionPerformed
