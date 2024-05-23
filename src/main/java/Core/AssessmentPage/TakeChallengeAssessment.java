@@ -19,6 +19,7 @@ public class TakeChallengeAssessment extends javax.swing.JFrame {
 	 */
 	public TakeChallengeAssessment() {
 		initComponents();
+		this.setExtendedState(MAXIMIZED_BOTH);
 	}
 
 	/**

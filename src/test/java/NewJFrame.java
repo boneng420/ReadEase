@@ -25,6 +25,31 @@ public class NewJFrame extends javax.swing.JFrame {
         // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
         private void initComponents() {
 
+                jFrame1 = new javax.swing.JFrame();
+                jFrame2 = new javax.swing.JFrame();
+
+                javax.swing.GroupLayout jFrame1Layout = new javax.swing.GroupLayout(jFrame1.getContentPane());
+                jFrame1.getContentPane().setLayout(jFrame1Layout);
+                jFrame1Layout.setHorizontalGroup(
+                        jFrame1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addGap(0, 400, Short.MAX_VALUE)
+                );
+                jFrame1Layout.setVerticalGroup(
+                        jFrame1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addGap(0, 300, Short.MAX_VALUE)
+                );
+
+                javax.swing.GroupLayout jFrame2Layout = new javax.swing.GroupLayout(jFrame2.getContentPane());
+                jFrame2.getContentPane().setLayout(jFrame2Layout);
+                jFrame2Layout.setHorizontalGroup(
+                        jFrame2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addGap(0, 400, Short.MAX_VALUE)
+                );
+                jFrame2Layout.setVerticalGroup(
+                        jFrame2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addGap(0, 300, Short.MAX_VALUE)
+                );
+
                 setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
                 javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -35,10 +60,11 @@ public class NewJFrame extends javax.swing.JFrame {
                 );
                 layout.setVerticalGroup(
                         layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addGap(0, 882, Short.MAX_VALUE)
+                        .addGap(0, 500, Short.MAX_VALUE)
                 );
 
                 pack();
+                setLocationRelativeTo(null);
         }// </editor-fold>//GEN-END:initComponents
 
 	/**
@@ -77,5 +103,7 @@ public class NewJFrame extends javax.swing.JFrame {
 	}
 
         // Variables declaration - do not modify//GEN-BEGIN:variables
+        private javax.swing.JFrame jFrame1;
+        private javax.swing.JFrame jFrame2;
         // End of variables declaration//GEN-END:variables
 }

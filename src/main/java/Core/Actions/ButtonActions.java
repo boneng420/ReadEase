@@ -153,9 +153,11 @@ public class ButtonActions {
     public static void checkAnswerAndNext(String[] correctWords, String userAnswer, JTabbedPane tabbedPane, JTextArea textArea, boolean useDelimiter) {
         String delimiter = useDelimiter ? " " : "";
         String correctAnswer = String.join(delimiter, correctWords);
+
         if (userAnswer.equalsIgnoreCase(correctAnswer)) {
             JOptionPane.showMessageDialog(null, "Correct!");
             int selectedIndex = tabbedPane.getSelectedIndex();
+
             if (selectedIndex + 1 < tabbedPane.getTabCount()) {
                 tabbedPane.setSelectedIndex(selectedIndex + 1);
                 textArea.setText("");

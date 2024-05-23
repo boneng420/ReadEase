@@ -46,10 +46,10 @@ public class HardTakeChallenge extends javax.swing.JFrame {
                 jPanel3 = new javax.swing.JPanel();
                 soundToggleButtonH1 = new javax.swing.JToggleButton();
                 returnButtonH1 = new javax.swing.JButton();
-                E2ButtonH2 = new javax.swing.JButton();
-                NButtonH3 = new javax.swing.JButton();
+                E2ButtonH1 = new javax.swing.JButton();
+                NButtonH1 = new javax.swing.JButton();
                 HButtonH1 = new javax.swing.JButton();
-                TCtabbedPane1H1 = new javax.swing.JPanel();
+                TCtabbedPane2H = new javax.swing.JPanel();
                 instructionLabelTC2 = new javax.swing.JLabel();
                 jPanel2 = new javax.swing.JPanel();
                 readButtonH2 = new javax.swing.JButton();
@@ -60,13 +60,62 @@ public class HardTakeChallenge extends javax.swing.JFrame {
                 EButtonH2 = new javax.swing.JButton();
                 RButtonH2 = new javax.swing.JButton();
                 nextButtonH2 = new javax.swing.JButton();
-                jScrollPane2 = new javax.swing.JScrollPane();
                 textAreaH2 = new javax.swing.JTextArea();
                 jPanel4 = new javax.swing.JPanel();
                 soundToggleButtonH2 = new javax.swing.JToggleButton();
                 F1ButtonH2 = new javax.swing.JButton();
                 GButtonH2 = new javax.swing.JButton();
                 AButtonH2 = new javax.swing.JButton();
+                TCtabbedPane3H = new javax.swing.JPanel();
+                instructionLabelTC3 = new javax.swing.JLabel();
+                jPanel5 = new javax.swing.JPanel();
+                readButtonH3 = new javax.swing.JButton();
+                clearButtonH3 = new javax.swing.JButton();
+                hintButtonH3 = new javax.swing.JButton();
+                S2ButtonH3 = new javax.swing.JButton();
+                GButtonH3 = new javax.swing.JButton();
+                EButtonH3 = new javax.swing.JButton();
+                S1ButtonH3 = new javax.swing.JButton();
+                nextButtonH3 = new javax.swing.JButton();
+                textAreaH3 = new javax.swing.JTextArea();
+                jPanel6 = new javax.swing.JPanel();
+                soundToggleButtonH3 = new javax.swing.JToggleButton();
+                S3ButtonH3 = new javax.swing.JButton();
+                AButtonH3 = new javax.swing.JButton();
+                LButtonH3 = new javax.swing.JButton();
+                TCtabbedPane4H = new javax.swing.JPanel();
+                instructionLabelTC4 = new javax.swing.JLabel();
+                jPanel7 = new javax.swing.JPanel();
+                readButtonH4 = new javax.swing.JButton();
+                clearButtonH4 = new javax.swing.JButton();
+                hintButtonH4 = new javax.swing.JButton();
+                RButtonH4 = new javax.swing.JButton();
+                CButtonH4 = new javax.swing.JButton();
+                MButtonH4 = new javax.swing.JButton();
+                EButtonH4 = new javax.swing.JButton();
+                nextButtonH4 = new javax.swing.JButton();
+                textAreaH4 = new javax.swing.JTextArea();
+                jPanel8 = new javax.swing.JPanel();
+                soundToggleButtonH4 = new javax.swing.JToggleButton();
+                A1ButtonH4 = new javax.swing.JButton();
+                A2ButtonH4 = new javax.swing.JButton();
+                TCtabbedPane5H = new javax.swing.JPanel();
+                instructionLabelTC5 = new javax.swing.JLabel();
+                jPanel9 = new javax.swing.JPanel();
+                readButtonH5 = new javax.swing.JButton();
+                clearButtonH5 = new javax.swing.JButton();
+                hintButtonH5 = new javax.swing.JButton();
+                GButtonH5 = new javax.swing.JButton();
+                UButtonH5 = new javax.swing.JButton();
+                PButtonH5 = new javax.swing.JButton();
+                N1ButtonH5 = new javax.swing.JButton();
+                nextButtonH5 = new javax.swing.JButton();
+                textAreaH5 = new javax.swing.JTextArea();
+                jPanel10 = new javax.swing.JPanel();
+                soundToggleButtonH5 = new javax.swing.JToggleButton();
+                N2ButtonH5 = new javax.swing.JButton();
+                IButtonH6 = new javax.swing.JButton();
+                EButtonH6 = new javax.swing.JButton();
 
                 setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -201,23 +250,23 @@ public class HardTakeChallenge extends javax.swing.JFrame {
                 });
                 TCtabbedPane1H.add(returnButtonH1, new org.netbeans.lib.awtextra.AbsoluteConstraints(12, 485, 73, -1));
 
-                E2ButtonH2.setFont(new java.awt.Font("Dialog", 1, 48)); // NOI18N
-                E2ButtonH2.setText("E");
-                E2ButtonH2.addActionListener(new java.awt.event.ActionListener() {
+                E2ButtonH1.setFont(new java.awt.Font("Dialog", 1, 48)); // NOI18N
+                E2ButtonH1.setText("E");
+                E2ButtonH1.addActionListener(new java.awt.event.ActionListener() {
                         public void actionPerformed(java.awt.event.ActionEvent evt) {
-                                E2ButtonH2ActionPerformed(evt);
+                                E2ButtonH1ActionPerformed(evt);
                         }
                 });
-                TCtabbedPane1H.add(E2ButtonH2, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 310, 98, 67));
+                TCtabbedPane1H.add(E2ButtonH1, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 310, 98, 67));
 
-                NButtonH3.setFont(new java.awt.Font("Dialog", 1, 48)); // NOI18N
-                NButtonH3.setText("N");
-                NButtonH3.addActionListener(new java.awt.event.ActionListener() {
+                NButtonH1.setFont(new java.awt.Font("Dialog", 1, 48)); // NOI18N
+                NButtonH1.setText("N");
+                NButtonH1.addActionListener(new java.awt.event.ActionListener() {
                         public void actionPerformed(java.awt.event.ActionEvent evt) {
-                                NButtonH3ActionPerformed(evt);
+                                NButtonH1ActionPerformed(evt);
                         }
                 });
-                TCtabbedPane1H.add(NButtonH3, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 310, 98, 67));
+                TCtabbedPane1H.add(NButtonH1, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 310, 98, 67));
 
                 HButtonH1.setFont(new java.awt.Font("Dialog", 1, 48)); // NOI18N
                 HButtonH1.setText("H");
@@ -230,14 +279,14 @@ public class HardTakeChallenge extends javax.swing.JFrame {
 
                 HTakeChallengeJTabbedPane.addTab("tab1", TCtabbedPane1H);
 
-                TCtabbedPane1H1.setBackground(new java.awt.Color(204, 204, 204));
-                TCtabbedPane1H1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+                TCtabbedPane2H.setBackground(new java.awt.Color(204, 204, 204));
+                TCtabbedPane2H.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
                 instructionLabelTC2.setFont(new java.awt.Font("Dialog", 0, 48)); // NOI18N
                 instructionLabelTC2.setForeground(new java.awt.Color(0, 0, 0));
                 instructionLabelTC2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
                 instructionLabelTC2.setText("Guess the Word");
-                TCtabbedPane1H1.add(instructionLabelTC2, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 30, 531, 80));
+                TCtabbedPane2H.add(instructionLabelTC2, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 30, 531, 80));
 
                 javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
                 jPanel2.setLayout(jPanel2Layout);
@@ -250,7 +299,7 @@ public class HardTakeChallenge extends javax.swing.JFrame {
                         .addGap(0, 0, Short.MAX_VALUE)
                 );
 
-                TCtabbedPane1H1.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(12, 129, -1, -1));
+                TCtabbedPane2H.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(12, 129, -1, -1));
 
                 readButtonH2.setText("Read");
                 readButtonH2.addActionListener(new java.awt.event.ActionListener() {
@@ -258,7 +307,7 @@ public class HardTakeChallenge extends javax.swing.JFrame {
                                 readButtonH2ActionPerformed(evt);
                         }
                 });
-                TCtabbedPane1H1.add(readButtonH2, new org.netbeans.lib.awtextra.AbsoluteConstraints(184, 435, 73, -1));
+                TCtabbedPane2H.add(readButtonH2, new org.netbeans.lib.awtextra.AbsoluteConstraints(184, 435, 73, -1));
 
                 clearButtonH2.setText("Clear");
                 clearButtonH2.addActionListener(new java.awt.event.ActionListener() {
@@ -266,10 +315,10 @@ public class HardTakeChallenge extends javax.swing.JFrame {
                                 clearButtonH2ActionPerformed(evt);
                         }
                 });
-                TCtabbedPane1H1.add(clearButtonH2, new org.netbeans.lib.awtextra.AbsoluteConstraints(268, 435, 73, -1));
+                TCtabbedPane2H.add(clearButtonH2, new org.netbeans.lib.awtextra.AbsoluteConstraints(268, 435, 73, -1));
 
                 hintButtonH2.setText("Hint");
-                TCtabbedPane1H1.add(hintButtonH2, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 435, 73, -1));
+                TCtabbedPane2H.add(hintButtonH2, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 435, 73, -1));
 
                 F2ButtonH2.setFont(new java.awt.Font("Dialog", 1, 48)); // NOI18N
                 F2ButtonH2.setText("F");
@@ -278,7 +327,7 @@ public class HardTakeChallenge extends javax.swing.JFrame {
                                 F2ButtonH2ActionPerformed(evt);
                         }
                 });
-                TCtabbedPane1H1.add(F2ButtonH2, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 200, 98, 67));
+                TCtabbedPane2H.add(F2ButtonH2, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 200, 98, 67));
 
                 IButtonH2.setFont(new java.awt.Font("Dialog", 1, 48)); // NOI18N
                 IButtonH2.setText("I");
@@ -287,7 +336,7 @@ public class HardTakeChallenge extends javax.swing.JFrame {
                                 IButtonH2ActionPerformed(evt);
                         }
                 });
-                TCtabbedPane1H1.add(IButtonH2, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 130, 98, 67));
+                TCtabbedPane2H.add(IButtonH2, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 130, 98, 67));
 
                 EButtonH2.setFont(new java.awt.Font("Dialog", 1, 48)); // NOI18N
                 EButtonH2.setText("E");
@@ -296,7 +345,7 @@ public class HardTakeChallenge extends javax.swing.JFrame {
                                 EButtonH2ActionPerformed(evt);
                         }
                 });
-                TCtabbedPane1H1.add(EButtonH2, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 200, 98, 67));
+                TCtabbedPane2H.add(EButtonH2, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 200, 98, 67));
 
                 RButtonH2.setFont(new java.awt.Font("Dialog", 1, 48)); // NOI18N
                 RButtonH2.setText("R");
@@ -305,7 +354,7 @@ public class HardTakeChallenge extends javax.swing.JFrame {
                                 RButtonH2ActionPerformed(evt);
                         }
                 });
-                TCtabbedPane1H1.add(RButtonH2, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 130, 98, 67));
+                TCtabbedPane2H.add(RButtonH2, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 130, 98, 67));
 
                 nextButtonH2.setText("Next");
                 nextButtonH2.addActionListener(new java.awt.event.ActionListener() {
@@ -313,15 +362,13 @@ public class HardTakeChallenge extends javax.swing.JFrame {
                                 nextButtonH2ActionPerformed(evt);
                         }
                 });
-                TCtabbedPane1H1.add(nextButtonH2, new org.netbeans.lib.awtextra.AbsoluteConstraints(690, 480, 73, -1));
+                TCtabbedPane2H.add(nextButtonH2, new org.netbeans.lib.awtextra.AbsoluteConstraints(690, 480, 73, -1));
 
                 textAreaH2.setEditable(false);
                 textAreaH2.setColumns(20);
                 textAreaH2.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
                 textAreaH2.setRows(5);
-                jScrollPane2.setViewportView(textAreaH2);
-
-                TCtabbedPane1H1.add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 350, 220, 70));
+                TCtabbedPane2H.add(textAreaH2, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 340, 320, 80));
 
                 javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
                 jPanel4.setLayout(jPanel4Layout);
@@ -334,7 +381,7 @@ public class HardTakeChallenge extends javax.swing.JFrame {
                         .addGap(0, 180, Short.MAX_VALUE)
                 );
 
-                TCtabbedPane1H1.add(jPanel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 140, 320, 180));
+                TCtabbedPane2H.add(jPanel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 140, 320, 180));
 
                 soundToggleButtonH2.setText("Sound");
                 soundToggleButtonH2.addActionListener(new java.awt.event.ActionListener() {
@@ -342,7 +389,7 @@ public class HardTakeChallenge extends javax.swing.JFrame {
                                 soundToggleButtonH2ActionPerformed(evt);
                         }
                 });
-                TCtabbedPane1H1.add(soundToggleButtonH2, new org.netbeans.lib.awtextra.AbsoluteConstraints(690, 10, -1, -1));
+                TCtabbedPane2H.add(soundToggleButtonH2, new org.netbeans.lib.awtextra.AbsoluteConstraints(690, 10, -1, -1));
 
                 F1ButtonH2.setFont(new java.awt.Font("Dialog", 1, 48)); // NOI18N
                 F1ButtonH2.setText("F");
@@ -351,7 +398,7 @@ public class HardTakeChallenge extends javax.swing.JFrame {
                                 F1ButtonH2ActionPerformed(evt);
                         }
                 });
-                TCtabbedPane1H1.add(F1ButtonH2, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 280, 98, 67));
+                TCtabbedPane2H.add(F1ButtonH2, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 280, 98, 67));
 
                 GButtonH2.setFont(new java.awt.Font("Dialog", 1, 48)); // NOI18N
                 GButtonH2.setText("G");
@@ -360,7 +407,7 @@ public class HardTakeChallenge extends javax.swing.JFrame {
                                 GButtonH2ActionPerformed(evt);
                         }
                 });
-                TCtabbedPane1H1.add(GButtonH2, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 280, 98, 67));
+                TCtabbedPane2H.add(GButtonH2, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 280, 98, 67));
 
                 AButtonH2.setFont(new java.awt.Font("Dialog", 1, 48)); // NOI18N
                 AButtonH2.setText("A");
@@ -369,9 +416,423 @@ public class HardTakeChallenge extends javax.swing.JFrame {
                                 AButtonH2ActionPerformed(evt);
                         }
                 });
-                TCtabbedPane1H1.add(AButtonH2, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 360, 98, 67));
+                TCtabbedPane2H.add(AButtonH2, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 360, 98, 67));
 
-                HTakeChallengeJTabbedPane.addTab("tab2", TCtabbedPane1H1);
+                HTakeChallengeJTabbedPane.addTab("tab2", TCtabbedPane2H);
+
+                TCtabbedPane3H.setBackground(new java.awt.Color(204, 204, 204));
+                TCtabbedPane3H.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+                instructionLabelTC3.setFont(new java.awt.Font("Dialog", 0, 48)); // NOI18N
+                instructionLabelTC3.setForeground(new java.awt.Color(0, 0, 0));
+                instructionLabelTC3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+                instructionLabelTC3.setText("Guess the Word");
+                TCtabbedPane3H.add(instructionLabelTC3, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 30, 531, 80));
+
+                javax.swing.GroupLayout jPanel5Layout = new javax.swing.GroupLayout(jPanel5);
+                jPanel5.setLayout(jPanel5Layout);
+                jPanel5Layout.setHorizontalGroup(
+                        jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addGap(0, 0, Short.MAX_VALUE)
+                );
+                jPanel5Layout.setVerticalGroup(
+                        jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addGap(0, 0, Short.MAX_VALUE)
+                );
+
+                TCtabbedPane3H.add(jPanel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(12, 129, -1, -1));
+
+                readButtonH3.setText("Read");
+                readButtonH3.addActionListener(new java.awt.event.ActionListener() {
+                        public void actionPerformed(java.awt.event.ActionEvent evt) {
+                                readButtonH3ActionPerformed(evt);
+                        }
+                });
+                TCtabbedPane3H.add(readButtonH3, new org.netbeans.lib.awtextra.AbsoluteConstraints(184, 435, 73, -1));
+
+                clearButtonH3.setText("Clear");
+                clearButtonH3.addActionListener(new java.awt.event.ActionListener() {
+                        public void actionPerformed(java.awt.event.ActionEvent evt) {
+                                clearButtonH3ActionPerformed(evt);
+                        }
+                });
+                TCtabbedPane3H.add(clearButtonH3, new org.netbeans.lib.awtextra.AbsoluteConstraints(268, 435, 73, -1));
+
+                hintButtonH3.setText("Hint");
+                TCtabbedPane3H.add(hintButtonH3, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 435, 73, -1));
+
+                S2ButtonH3.setFont(new java.awt.Font("Dialog", 1, 48)); // NOI18N
+                S2ButtonH3.setText("S");
+                S2ButtonH3.addActionListener(new java.awt.event.ActionListener() {
+                        public void actionPerformed(java.awt.event.ActionEvent evt) {
+                                S2ButtonH3ActionPerformed(evt);
+                        }
+                });
+                TCtabbedPane3H.add(S2ButtonH3, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 200, 98, 67));
+
+                GButtonH3.setFont(new java.awt.Font("Dialog", 1, 48)); // NOI18N
+                GButtonH3.setText("G");
+                GButtonH3.addActionListener(new java.awt.event.ActionListener() {
+                        public void actionPerformed(java.awt.event.ActionEvent evt) {
+                                GButtonH3ActionPerformed(evt);
+                        }
+                });
+                TCtabbedPane3H.add(GButtonH3, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 130, 98, 67));
+
+                EButtonH3.setFont(new java.awt.Font("Dialog", 1, 48)); // NOI18N
+                EButtonH3.setText("E");
+                EButtonH3.addActionListener(new java.awt.event.ActionListener() {
+                        public void actionPerformed(java.awt.event.ActionEvent evt) {
+                                EButtonH3ActionPerformed(evt);
+                        }
+                });
+                TCtabbedPane3H.add(EButtonH3, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 200, 98, 67));
+
+                S1ButtonH3.setFont(new java.awt.Font("Dialog", 1, 48)); // NOI18N
+                S1ButtonH3.setText("S");
+                S1ButtonH3.addActionListener(new java.awt.event.ActionListener() {
+                        public void actionPerformed(java.awt.event.ActionEvent evt) {
+                                S1ButtonH3ActionPerformed(evt);
+                        }
+                });
+                TCtabbedPane3H.add(S1ButtonH3, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 130, 98, 67));
+
+                nextButtonH3.setText("Next");
+                nextButtonH3.addActionListener(new java.awt.event.ActionListener() {
+                        public void actionPerformed(java.awt.event.ActionEvent evt) {
+                                nextButtonH3ActionPerformed(evt);
+                        }
+                });
+                TCtabbedPane3H.add(nextButtonH3, new org.netbeans.lib.awtextra.AbsoluteConstraints(690, 480, 73, -1));
+
+                textAreaH3.setEditable(false);
+                textAreaH3.setColumns(20);
+                textAreaH3.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
+                textAreaH3.setRows(5);
+                TCtabbedPane3H.add(textAreaH3, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 340, 320, 80));
+
+                javax.swing.GroupLayout jPanel6Layout = new javax.swing.GroupLayout(jPanel6);
+                jPanel6.setLayout(jPanel6Layout);
+                jPanel6Layout.setHorizontalGroup(
+                        jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addGap(0, 320, Short.MAX_VALUE)
+                );
+                jPanel6Layout.setVerticalGroup(
+                        jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addGap(0, 180, Short.MAX_VALUE)
+                );
+
+                TCtabbedPane3H.add(jPanel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 140, 320, 180));
+
+                soundToggleButtonH3.setText("Sound");
+                soundToggleButtonH3.addActionListener(new java.awt.event.ActionListener() {
+                        public void actionPerformed(java.awt.event.ActionEvent evt) {
+                                soundToggleButtonH3ActionPerformed(evt);
+                        }
+                });
+                TCtabbedPane3H.add(soundToggleButtonH3, new org.netbeans.lib.awtextra.AbsoluteConstraints(690, 10, -1, -1));
+
+                S3ButtonH3.setFont(new java.awt.Font("Dialog", 1, 48)); // NOI18N
+                S3ButtonH3.setText("S");
+                S3ButtonH3.addActionListener(new java.awt.event.ActionListener() {
+                        public void actionPerformed(java.awt.event.ActionEvent evt) {
+                                S3ButtonH3ActionPerformed(evt);
+                        }
+                });
+                TCtabbedPane3H.add(S3ButtonH3, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 280, 98, 67));
+
+                AButtonH3.setFont(new java.awt.Font("Dialog", 1, 48)); // NOI18N
+                AButtonH3.setText("A");
+                AButtonH3.addActionListener(new java.awt.event.ActionListener() {
+                        public void actionPerformed(java.awt.event.ActionEvent evt) {
+                                AButtonH3ActionPerformed(evt);
+                        }
+                });
+                TCtabbedPane3H.add(AButtonH3, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 280, 98, 67));
+
+                LButtonH3.setFont(new java.awt.Font("Dialog", 1, 48)); // NOI18N
+                LButtonH3.setText("L");
+                LButtonH3.addActionListener(new java.awt.event.ActionListener() {
+                        public void actionPerformed(java.awt.event.ActionEvent evt) {
+                                LButtonH3ActionPerformed(evt);
+                        }
+                });
+                TCtabbedPane3H.add(LButtonH3, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 360, 98, 67));
+
+                HTakeChallengeJTabbedPane.addTab("tab3", TCtabbedPane3H);
+
+                TCtabbedPane4H.setBackground(new java.awt.Color(204, 204, 204));
+                TCtabbedPane4H.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+                instructionLabelTC4.setFont(new java.awt.Font("Dialog", 0, 48)); // NOI18N
+                instructionLabelTC4.setForeground(new java.awt.Color(0, 0, 0));
+                instructionLabelTC4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+                instructionLabelTC4.setText("Guess the Word");
+                TCtabbedPane4H.add(instructionLabelTC4, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 30, 531, 80));
+
+                javax.swing.GroupLayout jPanel7Layout = new javax.swing.GroupLayout(jPanel7);
+                jPanel7.setLayout(jPanel7Layout);
+                jPanel7Layout.setHorizontalGroup(
+                        jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addGap(0, 0, Short.MAX_VALUE)
+                );
+                jPanel7Layout.setVerticalGroup(
+                        jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addGap(0, 0, Short.MAX_VALUE)
+                );
+
+                TCtabbedPane4H.add(jPanel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(12, 129, -1, -1));
+
+                readButtonH4.setText("Read");
+                readButtonH4.addActionListener(new java.awt.event.ActionListener() {
+                        public void actionPerformed(java.awt.event.ActionEvent evt) {
+                                readButtonH4ActionPerformed(evt);
+                        }
+                });
+                TCtabbedPane4H.add(readButtonH4, new org.netbeans.lib.awtextra.AbsoluteConstraints(184, 435, 73, -1));
+
+                clearButtonH4.setText("Clear");
+                clearButtonH4.addActionListener(new java.awt.event.ActionListener() {
+                        public void actionPerformed(java.awt.event.ActionEvent evt) {
+                                clearButtonH4ActionPerformed(evt);
+                        }
+                });
+                TCtabbedPane4H.add(clearButtonH4, new org.netbeans.lib.awtextra.AbsoluteConstraints(268, 435, 73, -1));
+
+                hintButtonH4.setText("Hint");
+                TCtabbedPane4H.add(hintButtonH4, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 435, 73, -1));
+
+                RButtonH4.setFont(new java.awt.Font("Dialog", 1, 48)); // NOI18N
+                RButtonH4.setText("R");
+                RButtonH4.addActionListener(new java.awt.event.ActionListener() {
+                        public void actionPerformed(java.awt.event.ActionEvent evt) {
+                                RButtonH4ActionPerformed(evt);
+                        }
+                });
+                TCtabbedPane4H.add(RButtonH4, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 220, 98, 67));
+
+                CButtonH4.setFont(new java.awt.Font("Dialog", 1, 48)); // NOI18N
+                CButtonH4.setText("C");
+                CButtonH4.addActionListener(new java.awt.event.ActionListener() {
+                        public void actionPerformed(java.awt.event.ActionEvent evt) {
+                                CButtonH4ActionPerformed(evt);
+                        }
+                });
+                TCtabbedPane4H.add(CButtonH4, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 150, 98, 67));
+
+                MButtonH4.setFont(new java.awt.Font("Dialog", 1, 48)); // NOI18N
+                MButtonH4.setText("M");
+                MButtonH4.addActionListener(new java.awt.event.ActionListener() {
+                        public void actionPerformed(java.awt.event.ActionEvent evt) {
+                                MButtonH4ActionPerformed(evt);
+                        }
+                });
+                TCtabbedPane4H.add(MButtonH4, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 220, 98, 67));
+
+                EButtonH4.setFont(new java.awt.Font("Dialog", 1, 48)); // NOI18N
+                EButtonH4.setText("E");
+                EButtonH4.addActionListener(new java.awt.event.ActionListener() {
+                        public void actionPerformed(java.awt.event.ActionEvent evt) {
+                                EButtonH4ActionPerformed(evt);
+                        }
+                });
+                TCtabbedPane4H.add(EButtonH4, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 150, 98, 67));
+
+                nextButtonH4.setText("Next");
+                nextButtonH4.addActionListener(new java.awt.event.ActionListener() {
+                        public void actionPerformed(java.awt.event.ActionEvent evt) {
+                                nextButtonH4ActionPerformed(evt);
+                        }
+                });
+                TCtabbedPane4H.add(nextButtonH4, new org.netbeans.lib.awtextra.AbsoluteConstraints(690, 480, 73, -1));
+
+                textAreaH4.setEditable(false);
+                textAreaH4.setColumns(20);
+                textAreaH4.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
+                textAreaH4.setRows(5);
+                TCtabbedPane4H.add(textAreaH4, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 340, 320, 80));
+
+                javax.swing.GroupLayout jPanel8Layout = new javax.swing.GroupLayout(jPanel8);
+                jPanel8.setLayout(jPanel8Layout);
+                jPanel8Layout.setHorizontalGroup(
+                        jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addGap(0, 320, Short.MAX_VALUE)
+                );
+                jPanel8Layout.setVerticalGroup(
+                        jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addGap(0, 180, Short.MAX_VALUE)
+                );
+
+                TCtabbedPane4H.add(jPanel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 140, 320, 180));
+
+                soundToggleButtonH4.setText("Sound");
+                soundToggleButtonH4.addActionListener(new java.awt.event.ActionListener() {
+                        public void actionPerformed(java.awt.event.ActionEvent evt) {
+                                soundToggleButtonH4ActionPerformed(evt);
+                        }
+                });
+                TCtabbedPane4H.add(soundToggleButtonH4, new org.netbeans.lib.awtextra.AbsoluteConstraints(690, 10, -1, -1));
+
+                A1ButtonH4.setFont(new java.awt.Font("Dialog", 1, 48)); // NOI18N
+                A1ButtonH4.setText("A");
+                A1ButtonH4.addActionListener(new java.awt.event.ActionListener() {
+                        public void actionPerformed(java.awt.event.ActionEvent evt) {
+                                A1ButtonH4ActionPerformed(evt);
+                        }
+                });
+                TCtabbedPane4H.add(A1ButtonH4, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 300, 98, 67));
+
+                A2ButtonH4.setFont(new java.awt.Font("Dialog", 1, 48)); // NOI18N
+                A2ButtonH4.setText("A");
+                A2ButtonH4.addActionListener(new java.awt.event.ActionListener() {
+                        public void actionPerformed(java.awt.event.ActionEvent evt) {
+                                A2ButtonH4ActionPerformed(evt);
+                        }
+                });
+                TCtabbedPane4H.add(A2ButtonH4, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 300, 98, 67));
+
+                HTakeChallengeJTabbedPane.addTab("tab4", TCtabbedPane4H);
+
+                TCtabbedPane5H.setBackground(new java.awt.Color(204, 204, 204));
+                TCtabbedPane5H.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+                instructionLabelTC5.setFont(new java.awt.Font("Dialog", 0, 48)); // NOI18N
+                instructionLabelTC5.setForeground(new java.awt.Color(0, 0, 0));
+                instructionLabelTC5.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+                instructionLabelTC5.setText("Guess the Word");
+                TCtabbedPane5H.add(instructionLabelTC5, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 30, 531, 80));
+
+                javax.swing.GroupLayout jPanel9Layout = new javax.swing.GroupLayout(jPanel9);
+                jPanel9.setLayout(jPanel9Layout);
+                jPanel9Layout.setHorizontalGroup(
+                        jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addGap(0, 0, Short.MAX_VALUE)
+                );
+                jPanel9Layout.setVerticalGroup(
+                        jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addGap(0, 0, Short.MAX_VALUE)
+                );
+
+                TCtabbedPane5H.add(jPanel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(12, 129, -1, -1));
+
+                readButtonH5.setText("Read");
+                readButtonH5.addActionListener(new java.awt.event.ActionListener() {
+                        public void actionPerformed(java.awt.event.ActionEvent evt) {
+                                readButtonH5ActionPerformed(evt);
+                        }
+                });
+                TCtabbedPane5H.add(readButtonH5, new org.netbeans.lib.awtextra.AbsoluteConstraints(184, 435, 73, -1));
+
+                clearButtonH5.setText("Clear");
+                clearButtonH5.addActionListener(new java.awt.event.ActionListener() {
+                        public void actionPerformed(java.awt.event.ActionEvent evt) {
+                                clearButtonH5ActionPerformed(evt);
+                        }
+                });
+                TCtabbedPane5H.add(clearButtonH5, new org.netbeans.lib.awtextra.AbsoluteConstraints(268, 435, 73, -1));
+
+                hintButtonH5.setText("Hint");
+                TCtabbedPane5H.add(hintButtonH5, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 435, 73, -1));
+
+                GButtonH5.setFont(new java.awt.Font("Dialog", 1, 48)); // NOI18N
+                GButtonH5.setText("G");
+                GButtonH5.addActionListener(new java.awt.event.ActionListener() {
+                        public void actionPerformed(java.awt.event.ActionEvent evt) {
+                                GButtonH5ActionPerformed(evt);
+                        }
+                });
+                TCtabbedPane5H.add(GButtonH5, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 220, 98, 67));
+
+                UButtonH5.setFont(new java.awt.Font("Dialog", 1, 48)); // NOI18N
+                UButtonH5.setText("U");
+                UButtonH5.addActionListener(new java.awt.event.ActionListener() {
+                        public void actionPerformed(java.awt.event.ActionEvent evt) {
+                                UButtonH5ActionPerformed(evt);
+                        }
+                });
+                TCtabbedPane5H.add(UButtonH5, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 140, 98, 67));
+
+                PButtonH5.setFont(new java.awt.Font("Dialog", 1, 48)); // NOI18N
+                PButtonH5.setText("P");
+                PButtonH5.addActionListener(new java.awt.event.ActionListener() {
+                        public void actionPerformed(java.awt.event.ActionEvent evt) {
+                                PButtonH5ActionPerformed(evt);
+                        }
+                });
+                TCtabbedPane5H.add(PButtonH5, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 220, 98, 67));
+
+                N1ButtonH5.setFont(new java.awt.Font("Dialog", 1, 48)); // NOI18N
+                N1ButtonH5.setText("N");
+                N1ButtonH5.addActionListener(new java.awt.event.ActionListener() {
+                        public void actionPerformed(java.awt.event.ActionEvent evt) {
+                                N1ButtonH5ActionPerformed(evt);
+                        }
+                });
+                TCtabbedPane5H.add(N1ButtonH5, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 140, 98, 67));
+
+                nextButtonH5.setText("Next");
+                nextButtonH5.addActionListener(new java.awt.event.ActionListener() {
+                        public void actionPerformed(java.awt.event.ActionEvent evt) {
+                                nextButtonH5ActionPerformed(evt);
+                        }
+                });
+                TCtabbedPane5H.add(nextButtonH5, new org.netbeans.lib.awtextra.AbsoluteConstraints(690, 480, 73, -1));
+
+                textAreaH5.setEditable(false);
+                textAreaH5.setColumns(20);
+                textAreaH5.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
+                textAreaH5.setRows(5);
+                TCtabbedPane5H.add(textAreaH5, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 340, 320, 80));
+
+                javax.swing.GroupLayout jPanel10Layout = new javax.swing.GroupLayout(jPanel10);
+                jPanel10.setLayout(jPanel10Layout);
+                jPanel10Layout.setHorizontalGroup(
+                        jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addGap(0, 320, Short.MAX_VALUE)
+                );
+                jPanel10Layout.setVerticalGroup(
+                        jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addGap(0, 180, Short.MAX_VALUE)
+                );
+
+                TCtabbedPane5H.add(jPanel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 140, 320, 180));
+
+                soundToggleButtonH5.setText("Sound");
+                soundToggleButtonH5.addActionListener(new java.awt.event.ActionListener() {
+                        public void actionPerformed(java.awt.event.ActionEvent evt) {
+                                soundToggleButtonH5ActionPerformed(evt);
+                        }
+                });
+                TCtabbedPane5H.add(soundToggleButtonH5, new org.netbeans.lib.awtextra.AbsoluteConstraints(690, 10, -1, -1));
+
+                N2ButtonH5.setFont(new java.awt.Font("Dialog", 1, 48)); // NOI18N
+                N2ButtonH5.setText("N");
+                N2ButtonH5.addActionListener(new java.awt.event.ActionListener() {
+                        public void actionPerformed(java.awt.event.ActionEvent evt) {
+                                N2ButtonH5ActionPerformed(evt);
+                        }
+                });
+                TCtabbedPane5H.add(N2ButtonH5, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 300, 98, 67));
+
+                IButtonH6.setFont(new java.awt.Font("Dialog", 1, 48)); // NOI18N
+                IButtonH6.setText("I");
+                IButtonH6.addActionListener(new java.awt.event.ActionListener() {
+                        public void actionPerformed(java.awt.event.ActionEvent evt) {
+                                IButtonH6ActionPerformed(evt);
+                        }
+                });
+                TCtabbedPane5H.add(IButtonH6, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 380, 98, 67));
+
+                EButtonH6.setFont(new java.awt.Font("Dialog", 1, 48)); // NOI18N
+                EButtonH6.setText("E");
+                EButtonH6.addActionListener(new java.awt.event.ActionListener() {
+                        public void actionPerformed(java.awt.event.ActionEvent evt) {
+                                EButtonH6ActionPerformed(evt);
+                        }
+                });
+                TCtabbedPane5H.add(EButtonH6, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 300, 98, 67));
+
+                HTakeChallengeJTabbedPane.addTab("tab5", TCtabbedPane5H);
 
                 javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
                 getContentPane().setLayout(layout);
@@ -395,13 +856,14 @@ public class HardTakeChallenge extends javax.swing.JFrame {
                 );
 
                 pack();
+                setLocationRelativeTo(null);
         }// </editor-fold>//GEN-END:initComponents
 
     String[] wordH1 = {"E", "L", "E", "P", "H", "A", "N", "T"};
     String[] wordH2 = {"G", "I", "R", "A", "F", "F", "E"};
     String[] wordH3 = {"G", "L", "A", "S", "S", "E", "S"};
     String[] wordH4 = {"C", "A", "M", "E", "R", "A"};
-    String[] wordH5 = {"K", "A", "N", "G", "A", "R", "O", "O"};
+    String[] wordH5 = {"P", "E", "N", "G", "U", "I", "N"};
 
     private void readButtonH1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_readButtonH1ActionPerformed
         // TODO add your handling code here:
@@ -460,17 +922,17 @@ public class HardTakeChallenge extends javax.swing.JFrame {
         new TakeChallengeAssessment().setVisible(true);
     }//GEN-LAST:event_returnButtonH1ActionPerformed
 
-    private void E2ButtonH2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_E2ButtonH2ActionPerformed
+    private void E2ButtonH1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_E2ButtonH1ActionPerformed
         // TODO add your handling code here:
         textAreaH1.append(wordH1[2]);
         ButtonActions.speak(wordH1[2], soundToggleButtonH1);
-    }//GEN-LAST:event_E2ButtonH2ActionPerformed
+    }//GEN-LAST:event_E2ButtonH1ActionPerformed
 
-    private void NButtonH3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_NButtonH3ActionPerformed
+    private void NButtonH1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_NButtonH1ActionPerformed
         // TODO add your handling code here:
         textAreaH1.append(wordH1[6]);
         ButtonActions.speak(wordH1[6], soundToggleButtonH1);
-    }//GEN-LAST:event_NButtonH3ActionPerformed
+    }//GEN-LAST:event_NButtonH1ActionPerformed
 
     private void HButtonH1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_HButtonH1ActionPerformed
         // TODO add your handling code here:
@@ -541,6 +1003,189 @@ public class HardTakeChallenge extends javax.swing.JFrame {
         ButtonActions.speak(wordH2[3], soundToggleButtonH2);
     }//GEN-LAST:event_AButtonH2ActionPerformed
 
+    private void readButtonH3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_readButtonH3ActionPerformed
+        // TODO add your handling code here:
+        ButtonActions.readText(textAreaH3);
+    }//GEN-LAST:event_readButtonH3ActionPerformed
+
+    private void clearButtonH3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_clearButtonH3ActionPerformed
+        // TODO add your handling code here:
+        ButtonActions.clearTextArea(textAreaH3);
+    }//GEN-LAST:event_clearButtonH3ActionPerformed
+
+    private void S2ButtonH3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_S2ButtonH3ActionPerformed
+        // TODO add your handling code here:
+        textAreaH3.append(wordH3[4]);
+        ButtonActions.speak(wordH3[4], soundToggleButtonH3);
+    }//GEN-LAST:event_S2ButtonH3ActionPerformed
+
+    private void GButtonH3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_GButtonH3ActionPerformed
+        // TODO add your handling code here:
+        textAreaH3.append(wordH3[0]);
+        ButtonActions.speak(wordH3[0], soundToggleButtonH3);
+    }//GEN-LAST:event_GButtonH3ActionPerformed
+
+    private void EButtonH3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_EButtonH3ActionPerformed
+        // TODO add your handling code here:
+        textAreaH3.append(wordH3[5]);
+        ButtonActions.speak(wordH3[5], soundToggleButtonH3);
+    }//GEN-LAST:event_EButtonH3ActionPerformed
+
+    private void S1ButtonH3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_S1ButtonH3ActionPerformed
+        // TODO add your handling code here:
+        textAreaH3.append(wordH3[3]);
+        ButtonActions.speak(wordH3[3], soundToggleButtonH3);
+    }//GEN-LAST:event_S1ButtonH3ActionPerformed
+
+    private void nextButtonH3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_nextButtonH3ActionPerformed
+        // TODO add your handling code here:
+        String userAnswer = textAreaH3.getText().trim();
+        ButtonActions.checkAnswerAndNext(wordH3, userAnswer, HTakeChallengeJTabbedPane, textAreaH3, false);
+    }//GEN-LAST:event_nextButtonH3ActionPerformed
+
+    private void soundToggleButtonH3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_soundToggleButtonH3ActionPerformed
+        // TODO add your handling code here:
+        ButtonActions.toggleTextToSpeech(soundToggleButtonH3);
+    }//GEN-LAST:event_soundToggleButtonH3ActionPerformed
+
+    private void S3ButtonH3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_S3ButtonH3ActionPerformed
+        // TODO add your handling code here:
+        textAreaH3.append(wordH3[6]);
+        ButtonActions.speak(wordH3[6], soundToggleButtonH3);
+    }//GEN-LAST:event_S3ButtonH3ActionPerformed
+
+    private void AButtonH3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_AButtonH3ActionPerformed
+        // TODO add your handling code here:
+        textAreaH3.append(wordH3[2]);
+        ButtonActions.speak(wordH3[2], soundToggleButtonH3);
+    }//GEN-LAST:event_AButtonH3ActionPerformed
+
+    private void LButtonH3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_LButtonH3ActionPerformed
+        // TODO add your handling code here:
+        textAreaH3.append(wordH3[1]);
+        ButtonActions.speak(wordH3[1], soundToggleButtonH3);
+    }//GEN-LAST:event_LButtonH3ActionPerformed
+
+    private void readButtonH4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_readButtonH4ActionPerformed
+        // TODO add your handling code here:
+        ButtonActions.readText(textAreaH4);
+    }//GEN-LAST:event_readButtonH4ActionPerformed
+
+    private void clearButtonH4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_clearButtonH4ActionPerformed
+        // TODO add your handling code here:
+        ButtonActions.clearTextArea(textAreaH4);
+    }//GEN-LAST:event_clearButtonH4ActionPerformed
+
+    private void RButtonH4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_RButtonH4ActionPerformed
+        // TODO add your handling code here:
+        textAreaH4.append(wordH4[4]);
+        ButtonActions.speak(wordH4[4], soundToggleButtonH4);
+    }//GEN-LAST:event_RButtonH4ActionPerformed
+
+    private void CButtonH4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CButtonH4ActionPerformed
+        // TODO add your handling code here:
+        textAreaH4.append(wordH4[0]);
+        ButtonActions.speak(wordH4[0], soundToggleButtonH4);
+    }//GEN-LAST:event_CButtonH4ActionPerformed
+
+    private void MButtonH4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MButtonH4ActionPerformed
+        // TODO add your handling code here:
+        textAreaH4.append(wordH4[2]);
+        ButtonActions.speak(wordH4[2], soundToggleButtonH4);
+    }//GEN-LAST:event_MButtonH4ActionPerformed
+
+    private void EButtonH4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_EButtonH4ActionPerformed
+        // TODO add your handling code here:
+        textAreaH4.append(wordH4[3]);
+        ButtonActions.speak(wordH4[3], soundToggleButtonH4);
+    }//GEN-LAST:event_EButtonH4ActionPerformed
+
+    private void nextButtonH4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_nextButtonH4ActionPerformed
+        // TODO add your handling code here:
+        String userAnswer = textAreaH4.getText().trim();
+        ButtonActions.checkAnswerAndNext(wordH4, userAnswer, HTakeChallengeJTabbedPane, textAreaH4, false);
+    }//GEN-LAST:event_nextButtonH4ActionPerformed
+
+    private void soundToggleButtonH4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_soundToggleButtonH4ActionPerformed
+        // TODO add your handling code here:
+        ButtonActions.toggleTextToSpeech(soundToggleButtonH4);
+    }//GEN-LAST:event_soundToggleButtonH4ActionPerformed
+
+    private void A1ButtonH4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_A1ButtonH4ActionPerformed
+        // TODO add your handling code here:
+        textAreaH4.append(wordH4[1]);
+        ButtonActions.speak(wordH4[1], soundToggleButtonH4);
+    }//GEN-LAST:event_A1ButtonH4ActionPerformed
+
+    private void A2ButtonH4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_A2ButtonH4ActionPerformed
+        // TODO add your handling code here:
+        textAreaH4.append(wordH4[5]);
+        ButtonActions.speak(wordH4[5], soundToggleButtonH4);
+    }//GEN-LAST:event_A2ButtonH4ActionPerformed
+
+    private void readButtonH5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_readButtonH5ActionPerformed
+        // TODO add your handling code here:
+        ButtonActions.readText(textAreaH5);
+    }//GEN-LAST:event_readButtonH5ActionPerformed
+
+    private void clearButtonH5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_clearButtonH5ActionPerformed
+        // TODO add your handling code here:
+        ButtonActions.clearTextArea(textAreaH5);
+    }//GEN-LAST:event_clearButtonH5ActionPerformed
+
+    private void GButtonH5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_GButtonH5ActionPerformed
+        // TODO add your handling code here:
+        textAreaH5.append(wordH5[3]);
+        ButtonActions.speak(wordH5[3], soundToggleButtonH5);
+    }//GEN-LAST:event_GButtonH5ActionPerformed
+
+    private void UButtonH5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_UButtonH5ActionPerformed
+        // TODO add your handling code here:
+        textAreaH5.append(wordH5[4]);
+        ButtonActions.speak(wordH5[4], soundToggleButtonH5);
+    }//GEN-LAST:event_UButtonH5ActionPerformed
+
+    private void PButtonH5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_PButtonH5ActionPerformed
+        // TODO add your handling code here:
+        textAreaH5.append(wordH5[0]);
+        ButtonActions.speak(wordH5[0], soundToggleButtonH5);
+    }//GEN-LAST:event_PButtonH5ActionPerformed
+
+    private void N1ButtonH5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_N1ButtonH5ActionPerformed
+        // TODO add your handling code here:
+        textAreaH5.append(wordH5[2]);
+        ButtonActions.speak(wordH5[2], soundToggleButtonH5);
+    }//GEN-LAST:event_N1ButtonH5ActionPerformed
+
+    private void nextButtonH5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_nextButtonH5ActionPerformed
+        // TODO add your handling code here:
+        String userAnswer = textAreaH5.getText().trim();
+        ButtonActions.checkAnswerAndNext(wordH5, userAnswer, HTakeChallengeJTabbedPane, textAreaH5, false);
+    }//GEN-LAST:event_nextButtonH5ActionPerformed
+
+    private void soundToggleButtonH5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_soundToggleButtonH5ActionPerformed
+        // TODO add your handling code here:
+        ButtonActions.toggleTextToSpeech(soundToggleButtonH5);
+    }//GEN-LAST:event_soundToggleButtonH5ActionPerformed
+
+    private void N2ButtonH5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_N2ButtonH5ActionPerformed
+        // TODO add your handling code here:
+        textAreaH5.append(wordH5[6]);
+        ButtonActions.speak(wordH5[6], soundToggleButtonH5);
+    }//GEN-LAST:event_N2ButtonH5ActionPerformed
+
+    private void IButtonH6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_IButtonH6ActionPerformed
+        // TODO add your handling code here:
+        textAreaH5.append(wordH5[5]);
+        ButtonActions.speak(wordH5[5], soundToggleButtonH5);
+    }//GEN-LAST:event_IButtonH6ActionPerformed
+
+    private void EButtonH6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_EButtonH6ActionPerformed
+        // TODO add your handling code here:
+        textAreaH5.append(wordH5[1]);
+        ButtonActions.speak(wordH5[1], soundToggleButtonH5);
+    }//GEN-LAST:event_EButtonH6ActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -608,44 +1253,93 @@ public class HardTakeChallenge extends javax.swing.JFrame {
     }
 
         // Variables declaration - do not modify//GEN-BEGIN:variables
+        private javax.swing.JButton A1ButtonH4;
+        private javax.swing.JButton A2ButtonH4;
         private javax.swing.JButton AButtonH1;
         private javax.swing.JButton AButtonH2;
-        private javax.swing.JButton E2ButtonH2;
+        private javax.swing.JButton AButtonH3;
+        private javax.swing.JButton CButtonH4;
+        private javax.swing.JButton E2ButtonH1;
         private javax.swing.JButton EButtonH1;
         private javax.swing.JButton EButtonH2;
+        private javax.swing.JButton EButtonH3;
+        private javax.swing.JButton EButtonH4;
+        private javax.swing.JButton EButtonH6;
         private javax.swing.JButton F1ButtonH2;
         private javax.swing.JButton F2ButtonH2;
         private javax.swing.JButton GButtonH2;
+        private javax.swing.JButton GButtonH3;
+        private javax.swing.JButton GButtonH5;
         private javax.swing.JButton HButtonH1;
         private javax.swing.JTabbedPane HTakeChallengeJTabbedPane;
         private javax.swing.JButton IButtonH2;
+        private javax.swing.JButton IButtonH6;
         private javax.swing.JButton LButtonH1;
-        private javax.swing.JButton NButtonH3;
+        private javax.swing.JButton LButtonH3;
+        private javax.swing.JButton MButtonH4;
+        private javax.swing.JButton N1ButtonH5;
+        private javax.swing.JButton N2ButtonH5;
+        private javax.swing.JButton NButtonH1;
         private javax.swing.JButton PButtonH1;
+        private javax.swing.JButton PButtonH5;
         private javax.swing.JButton RButtonH2;
+        private javax.swing.JButton RButtonH4;
+        private javax.swing.JButton S1ButtonH3;
+        private javax.swing.JButton S2ButtonH3;
+        private javax.swing.JButton S3ButtonH3;
         private javax.swing.JButton TButtonH1;
         private javax.swing.JPanel TCtabbedPane1H;
-        private javax.swing.JPanel TCtabbedPane1H1;
+        private javax.swing.JPanel TCtabbedPane2H;
+        private javax.swing.JPanel TCtabbedPane3H;
+        private javax.swing.JPanel TCtabbedPane4H;
+        private javax.swing.JPanel TCtabbedPane5H;
+        private javax.swing.JButton UButtonH5;
         private javax.swing.JButton clearButtonH1;
         private javax.swing.JButton clearButtonH2;
+        private javax.swing.JButton clearButtonH3;
+        private javax.swing.JButton clearButtonH4;
+        private javax.swing.JButton clearButtonH5;
         private javax.swing.JButton hintButtonH1;
         private javax.swing.JButton hintButtonH2;
+        private javax.swing.JButton hintButtonH3;
+        private javax.swing.JButton hintButtonH4;
+        private javax.swing.JButton hintButtonH5;
         private javax.swing.JLabel instructionLabelTC1;
         private javax.swing.JLabel instructionLabelTC2;
+        private javax.swing.JLabel instructionLabelTC3;
+        private javax.swing.JLabel instructionLabelTC4;
+        private javax.swing.JLabel instructionLabelTC5;
         private javax.swing.JPanel jPanel1;
+        private javax.swing.JPanel jPanel10;
         private javax.swing.JPanel jPanel2;
         private javax.swing.JPanel jPanel3;
         private javax.swing.JPanel jPanel4;
+        private javax.swing.JPanel jPanel5;
+        private javax.swing.JPanel jPanel6;
+        private javax.swing.JPanel jPanel7;
+        private javax.swing.JPanel jPanel8;
+        private javax.swing.JPanel jPanel9;
         private javax.swing.JScrollPane jScrollPane1;
-        private javax.swing.JScrollPane jScrollPane2;
         private javax.swing.JButton nextButtonH1;
         private javax.swing.JButton nextButtonH2;
+        private javax.swing.JButton nextButtonH3;
+        private javax.swing.JButton nextButtonH4;
+        private javax.swing.JButton nextButtonH5;
         private javax.swing.JButton readButtonH1;
         private javax.swing.JButton readButtonH2;
+        private javax.swing.JButton readButtonH3;
+        private javax.swing.JButton readButtonH4;
+        private javax.swing.JButton readButtonH5;
         private javax.swing.JButton returnButtonH1;
         private javax.swing.JToggleButton soundToggleButtonH1;
         private javax.swing.JToggleButton soundToggleButtonH2;
+        private javax.swing.JToggleButton soundToggleButtonH3;
+        private javax.swing.JToggleButton soundToggleButtonH4;
+        private javax.swing.JToggleButton soundToggleButtonH5;
         private javax.swing.JTextArea textAreaH1;
         private javax.swing.JTextArea textAreaH2;
+        private javax.swing.JTextArea textAreaH3;
+        private javax.swing.JTextArea textAreaH4;
+        private javax.swing.JTextArea textAreaH5;
         // End of variables declaration//GEN-END:variables
 }
