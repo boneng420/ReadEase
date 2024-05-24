@@ -34,7 +34,6 @@ public class OralAssessment extends javax.swing.JFrame {
                 q1Panel = new javax.swing.JPanel();
                 q1Label = new javax.swing.JLabel();
                 directionLabel = new javax.swing.JLabel();
-                jScrollPane1 = new javax.swing.JScrollPane();
                 textArea1 = new javax.swing.JTextArea();
                 clearButton1 = new javax.swing.JButton();
                 readButton1 = new javax.swing.JButton();
@@ -47,7 +46,6 @@ public class OralAssessment extends javax.swing.JFrame {
                 q2Panel = new javax.swing.JPanel();
                 q2Label = new javax.swing.JLabel();
                 directionLabel2 = new javax.swing.JLabel();
-                jScrollPane2 = new javax.swing.JScrollPane();
                 textArea2 = new javax.swing.JTextArea();
                 clearButton2 = new javax.swing.JButton();
                 ReadButton2 = new javax.swing.JButton();
@@ -62,7 +60,6 @@ public class OralAssessment extends javax.swing.JFrame {
                 q3Panel = new javax.swing.JPanel();
                 q3Label = new javax.swing.JLabel();
                 directionLabel3 = new javax.swing.JLabel();
-                jScrollPane3 = new javax.swing.JScrollPane();
                 textArea3 = new javax.swing.JTextArea();
                 clearButton3 = new javax.swing.JButton();
                 ReadButton3 = new javax.swing.JButton();
@@ -76,7 +73,6 @@ public class OralAssessment extends javax.swing.JFrame {
                 q4Panel = new javax.swing.JPanel();
                 q4Label = new javax.swing.JLabel();
                 directionLabel4 = new javax.swing.JLabel();
-                jScrollPane4 = new javax.swing.JScrollPane();
                 textArea4 = new javax.swing.JTextArea();
                 clearButton4 = new javax.swing.JButton();
                 ReadButton4 = new javax.swing.JButton();
@@ -89,7 +85,6 @@ public class OralAssessment extends javax.swing.JFrame {
                 q5Panel = new javax.swing.JPanel();
                 q4Label1 = new javax.swing.JLabel();
                 directionLabel5 = new javax.swing.JLabel();
-                jScrollPane5 = new javax.swing.JScrollPane();
                 textArea5 = new javax.swing.JTextArea();
                 clearButton5 = new javax.swing.JButton();
                 ReadButton5 = new javax.swing.JButton();
@@ -114,13 +109,12 @@ public class OralAssessment extends javax.swing.JFrame {
                 directionLabel.setForeground(new java.awt.Color(0, 0, 0));
                 directionLabel.setText("Direction: Describe the picture using the word");
 
+                textArea1.setEditable(false);
                 textArea1.setBackground(new java.awt.Color(153, 153, 153));
                 textArea1.setColumns(20);
                 textArea1.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
                 textArea1.setForeground(new java.awt.Color(0, 0, 0));
                 textArea1.setRows(5);
-                jScrollPane1.setViewportView(textArea1);
-                textArea1.setEditable(false);
 
                 clearButton1.setText("Clear");
                 clearButton1.addActionListener(new java.awt.event.ActionListener() {
@@ -205,7 +199,7 @@ public class OralAssessment extends javax.swing.JFrame {
                                                                                         .addComponent(netWordButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE)
                                                                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                                                                         .addComponent(TheWordButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                                                                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 424, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                                                        .addComponent(textArea1, javax.swing.GroupLayout.PREFERRED_SIZE, 417, javax.swing.GroupLayout.PREFERRED_SIZE))
                                                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                                                 .addGroup(q1PanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                                                         .addComponent(clearButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -228,14 +222,15 @@ public class OralAssessment extends javax.swing.JFrame {
                                 .addComponent(directionLabel)
                                 .addGap(12, 12, 12)
                                 .addComponent(q1Label)
-                                .addGap(18, 18, 18)
                                 .addGroup(q1PanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                         .addGroup(q1PanelLayout.createSequentialGroup()
-                                                .addGap(11, 11, 11)
+                                                .addGap(29, 29, 29)
                                                 .addComponent(clearButton1)
                                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                                 .addComponent(readButton1))
-                                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 79, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                        .addGroup(q1PanelLayout.createSequentialGroup()
+                                                .addGap(27, 27, 27)
+                                                .addComponent(textArea1, javax.swing.GroupLayout.PREFERRED_SIZE, 74, javax.swing.GroupLayout.PREFERRED_SIZE)))
                                 .addGap(18, 18, 18)
                                 .addGroup(q1PanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                                         .addComponent(netWordButton1)
@@ -244,10 +239,12 @@ public class OralAssessment extends javax.swing.JFrame {
                                 .addGroup(q1PanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                                         .addComponent(wetWordButton1)
                                         .addComponent(isWordButton1))
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 125, Short.MAX_VALUE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 121, Short.MAX_VALUE)
                                 .addComponent(nextButton1)
                                 .addContainerGap())
                 );
+
+                textArea1.setEditable(false);
 
                 assessmentTabbedPane.addTab("tab1", q1Panel);
 
@@ -261,13 +258,12 @@ public class OralAssessment extends javax.swing.JFrame {
                 directionLabel2.setForeground(new java.awt.Color(0, 0, 0));
                 directionLabel2.setText("Direction: Describe the picture using the word");
 
+                textArea2.setEditable(false);
                 textArea2.setBackground(new java.awt.Color(153, 153, 153));
                 textArea2.setColumns(20);
                 textArea2.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
                 textArea2.setForeground(new java.awt.Color(0, 0, 0));
                 textArea2.setRows(5);
-                jScrollPane2.setViewportView(textArea2);
-                textArea1.setEditable(false);
 
                 clearButton2.setText("Clear");
                 clearButton2.addActionListener(new java.awt.event.ActionListener() {
@@ -361,6 +357,7 @@ public class OralAssessment extends javax.swing.JFrame {
                                                                         .addComponent(directionLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 672, javax.swing.GroupLayout.PREFERRED_SIZE))
                                                                 .addGap(0, 34, Short.MAX_VALUE))
                                                         .addGroup(q2PanelLayout.createSequentialGroup()
+                                                                .addGap(249, 249, 249)
                                                                 .addGroup(q2PanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                                                                         .addGroup(q2PanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                                                                 .addGroup(q2PanelLayout.createSequentialGroup()
@@ -371,7 +368,6 @@ public class OralAssessment extends javax.swing.JFrame {
                                                                                         .addComponent(matWordButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE)
                                                                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                                                                         .addComponent(TheWordButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                                                                        .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 424, javax.swing.GroupLayout.PREFERRED_SIZE)
                                                                         .addGroup(q2PanelLayout.createSequentialGroup()
                                                                                 .addComponent(catWordButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE)
                                                                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -380,7 +376,7 @@ public class OralAssessment extends javax.swing.JFrame {
                                                                 .addGroup(q2PanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                                                         .addComponent(clearButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE)
                                                                         .addComponent(ReadButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 203, Short.MAX_VALUE))))
+                                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 204, Short.MAX_VALUE))))
                                         .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, q2PanelLayout.createSequentialGroup()
                                                 .addGap(0, 678, Short.MAX_VALUE)
                                                 .addComponent(textToSpeechToggleButton2))
@@ -388,6 +384,11 @@ public class OralAssessment extends javax.swing.JFrame {
                                                 .addContainerGap()
                                                 .addComponent(nextButton2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
                                 .addContainerGap())
+                        .addGroup(q2PanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, q2PanelLayout.createSequentialGroup()
+                                        .addContainerGap(43, Short.MAX_VALUE)
+                                        .addComponent(textArea2, javax.swing.GroupLayout.PREFERRED_SIZE, 407, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addContainerGap(295, Short.MAX_VALUE)))
                 );
                 q2PanelLayout.setVerticalGroup(
                         q2PanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -398,15 +399,11 @@ public class OralAssessment extends javax.swing.JFrame {
                                 .addComponent(directionLabel2)
                                 .addGap(12, 12, 12)
                                 .addComponent(q2Label)
-                                .addGap(18, 18, 18)
-                                .addGroup(q2PanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                        .addGroup(q2PanelLayout.createSequentialGroup()
-                                                .addGap(11, 11, 11)
-                                                .addComponent(clearButton2)
-                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                                .addComponent(ReadButton2))
-                                        .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 79, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addGap(18, 18, 18)
+                                .addGap(29, 29, 29)
+                                .addComponent(clearButton2)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(ReadButton2)
+                                .addGap(31, 31, 31)
                                 .addGroup(q2PanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                                         .addComponent(matWordButton2)
                                         .addComponent(TheWordButton2))
@@ -421,7 +418,14 @@ public class OralAssessment extends javax.swing.JFrame {
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 86, Short.MAX_VALUE)
                                 .addComponent(nextButton2)
                                 .addContainerGap())
+                        .addGroup(q2PanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, q2PanelLayout.createSequentialGroup()
+                                        .addContainerGap(145, Short.MAX_VALUE)
+                                        .addComponent(textArea2, javax.swing.GroupLayout.PREFERRED_SIZE, 69, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addContainerGap(259, Short.MAX_VALUE)))
                 );
+
+                textArea1.setEditable(false);
 
                 assessmentTabbedPane.addTab("tab2", q2Panel);
 
@@ -435,13 +439,12 @@ public class OralAssessment extends javax.swing.JFrame {
                 directionLabel3.setForeground(new java.awt.Color(0, 0, 0));
                 directionLabel3.setText("Direction: Describe the picture using the word");
 
+                textArea3.setEditable(false);
                 textArea3.setBackground(new java.awt.Color(153, 153, 153));
                 textArea3.setColumns(20);
                 textArea3.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
                 textArea3.setForeground(new java.awt.Color(0, 0, 0));
                 textArea3.setRows(5);
-                jScrollPane3.setViewportView(textArea3);
-                textArea1.setEditable(false);
 
                 clearButton3.setText("Clear");
                 clearButton3.addActionListener(new java.awt.event.ActionListener() {
@@ -524,17 +527,16 @@ public class OralAssessment extends javax.swing.JFrame {
                                                         .addComponent(q3Label)
                                                         .addComponent(directionLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 672, javax.swing.GroupLayout.PREFERRED_SIZE)
                                                         .addGroup(q3PanelLayout.createSequentialGroup()
-                                                                .addGroup(q3PanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                                                        .addGroup(q3PanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                                                                .addGroup(q3PanelLayout.createSequentialGroup()
-                                                                                        .addComponent(bigWordButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                                                                        .addComponent(hasWordButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                                                                .addGroup(q3PanelLayout.createSequentialGroup()
-                                                                                        .addComponent(fishWordButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                                                                        .addComponent(TheWordButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                                                                        .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, 424, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                                                .addGap(249, 249, 249)
+                                                                .addGroup(q3PanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                                                        .addGroup(q3PanelLayout.createSequentialGroup()
+                                                                                .addComponent(bigWordButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                                                                .addComponent(hasWordButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                                                        .addGroup(q3PanelLayout.createSequentialGroup()
+                                                                                .addComponent(fishWordButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                                                                .addComponent(TheWordButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE)))
                                                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                                                 .addGroup(q3PanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                                                         .addComponent(clearButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -551,6 +553,11 @@ public class OralAssessment extends javax.swing.JFrame {
                                 .addGap(324, 324, 324)
                                 .addComponent(finsWordButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                        .addGroup(q3PanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, q3PanelLayout.createSequentialGroup()
+                                        .addContainerGap(45, Short.MAX_VALUE)
+                                        .addComponent(textArea3, javax.swing.GroupLayout.PREFERRED_SIZE, 403, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addContainerGap(297, Short.MAX_VALUE)))
                 );
                 q3PanelLayout.setVerticalGroup(
                         q3PanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -561,15 +568,11 @@ public class OralAssessment extends javax.swing.JFrame {
                                 .addComponent(directionLabel3)
                                 .addGap(12, 12, 12)
                                 .addComponent(q3Label)
-                                .addGap(18, 18, 18)
-                                .addGroup(q3PanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                        .addGroup(q3PanelLayout.createSequentialGroup()
-                                                .addGap(11, 11, 11)
-                                                .addComponent(clearButton3)
-                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                                .addComponent(ReadButton3))
-                                        .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, 79, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addGap(18, 18, 18)
+                                .addGap(29, 29, 29)
+                                .addComponent(clearButton3)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(ReadButton3)
+                                .addGap(31, 31, 31)
                                 .addGroup(q3PanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                                         .addComponent(fishWordButton3)
                                         .addComponent(TheWordButton3))
@@ -582,7 +585,14 @@ public class OralAssessment extends javax.swing.JFrame {
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 86, Short.MAX_VALUE)
                                 .addComponent(nextButton3)
                                 .addContainerGap())
+                        .addGroup(q3PanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, q3PanelLayout.createSequentialGroup()
+                                        .addContainerGap(150, Short.MAX_VALUE)
+                                        .addComponent(textArea3, javax.swing.GroupLayout.PREFERRED_SIZE, 59, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addContainerGap(264, Short.MAX_VALUE)))
                 );
+
+                textArea1.setEditable(false);
 
                 assessmentTabbedPane.addTab("tab3", q3Panel);
 
@@ -596,13 +606,12 @@ public class OralAssessment extends javax.swing.JFrame {
                 directionLabel4.setForeground(new java.awt.Color(0, 0, 0));
                 directionLabel4.setText("Direction: Describe the picture using the word");
 
+                textArea4.setEditable(false);
                 textArea4.setBackground(new java.awt.Color(153, 153, 153));
                 textArea4.setColumns(20);
                 textArea4.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
                 textArea4.setForeground(new java.awt.Color(0, 0, 0));
                 textArea4.setRows(5);
-                jScrollPane4.setViewportView(textArea4);
-                textArea1.setEditable(false);
 
                 clearButton4.setText("Clear");
                 clearButton4.addActionListener(new java.awt.event.ActionListener() {
@@ -677,15 +686,13 @@ public class OralAssessment extends javax.swing.JFrame {
                                                         .addComponent(q4Label)
                                                         .addComponent(directionLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 672, javax.swing.GroupLayout.PREFERRED_SIZE)
                                                         .addGroup(q4PanelLayout.createSequentialGroup()
+                                                                .addGap(239, 239, 239)
                                                                 .addGroup(q4PanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                                                        .addGroup(q4PanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                                                                .addGroup(q4PanelLayout.createSequentialGroup()
-                                                                                        .addComponent(areWordButton4, javax.swing.GroupLayout.PREFERRED_SIZE, 95, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                                                                        .addComponent(sixWordButton4, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                                                                .addComponent(jScrollPane4, javax.swing.GroupLayout.PREFERRED_SIZE, 424, javax.swing.GroupLayout.PREFERRED_SIZE))
                                                                         .addGroup(q4PanelLayout.createSequentialGroup()
-                                                                                .addGap(239, 239, 239)
+                                                                                .addComponent(areWordButton4, javax.swing.GroupLayout.PREFERRED_SIZE, 95, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                                                                .addComponent(sixWordButton4, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                                                        .addGroup(q4PanelLayout.createSequentialGroup()
                                                                                 .addComponent(applesWordButton4, javax.swing.GroupLayout.PREFERRED_SIZE, 95, javax.swing.GroupLayout.PREFERRED_SIZE)
                                                                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                                                                 .addComponent(ThereWordButton4, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE)))
@@ -701,6 +708,11 @@ public class OralAssessment extends javax.swing.JFrame {
                                                 .addContainerGap()
                                                 .addComponent(nextButton4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
                                 .addContainerGap())
+                        .addGroup(q4PanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, q4PanelLayout.createSequentialGroup()
+                                        .addContainerGap(45, Short.MAX_VALUE)
+                                        .addComponent(textArea4, javax.swing.GroupLayout.PREFERRED_SIZE, 405, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addContainerGap(295, Short.MAX_VALUE)))
                 );
                 q4PanelLayout.setVerticalGroup(
                         q4PanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -711,15 +723,11 @@ public class OralAssessment extends javax.swing.JFrame {
                                 .addComponent(directionLabel4)
                                 .addGap(12, 12, 12)
                                 .addComponent(q4Label)
-                                .addGap(18, 18, 18)
-                                .addGroup(q4PanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                        .addGroup(q4PanelLayout.createSequentialGroup()
-                                                .addGap(11, 11, 11)
-                                                .addComponent(clearButton4)
-                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                                .addComponent(ReadButton4))
-                                        .addComponent(jScrollPane4, javax.swing.GroupLayout.PREFERRED_SIZE, 79, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addGap(18, 18, 18)
+                                .addGap(29, 29, 29)
+                                .addComponent(clearButton4)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(ReadButton4)
+                                .addGap(31, 31, 31)
                                 .addGroup(q4PanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                         .addComponent(sixWordButton4)
                                         .addComponent(areWordButton4))
@@ -730,7 +738,14 @@ public class OralAssessment extends javax.swing.JFrame {
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 125, Short.MAX_VALUE)
                                 .addComponent(nextButton4)
                                 .addContainerGap())
+                        .addGroup(q4PanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, q4PanelLayout.createSequentialGroup()
+                                        .addContainerGap(139, Short.MAX_VALUE)
+                                        .addComponent(textArea4, javax.swing.GroupLayout.PREFERRED_SIZE, 77, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addContainerGap(257, Short.MAX_VALUE)))
                 );
+
+                textArea1.setEditable(false);
 
                 assessmentTabbedPane.addTab("tab4", q4Panel);
 
@@ -744,13 +759,12 @@ public class OralAssessment extends javax.swing.JFrame {
                 directionLabel5.setForeground(new java.awt.Color(0, 0, 0));
                 directionLabel5.setText("Direction: Describe the picture using the word");
 
+                textArea5.setEditable(false);
                 textArea5.setBackground(new java.awt.Color(153, 153, 153));
                 textArea5.setColumns(20);
                 textArea5.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
                 textArea5.setForeground(new java.awt.Color(0, 0, 0));
                 textArea5.setRows(5);
-                jScrollPane5.setViewportView(textArea5);
-                textArea1.setEditable(false);
 
                 clearButton5.setText("Clear");
                 clearButton5.addActionListener(new java.awt.event.ActionListener() {
@@ -841,24 +855,20 @@ public class OralAssessment extends javax.swing.JFrame {
                                                         .addComponent(q4Label1)
                                                         .addComponent(directionLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 672, javax.swing.GroupLayout.PREFERRED_SIZE)
                                                         .addGroup(q5PanelLayout.createSequentialGroup()
+                                                                .addGap(239, 239, 239)
                                                                 .addGroup(q5PanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                                                        .addGroup(q5PanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                                                                .addGroup(q5PanelLayout.createSequentialGroup()
-                                                                                        .addComponent(boxWordButton5, javax.swing.GroupLayout.PREFERRED_SIZE, 95, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                                                                        .addComponent(isWordButton5, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                                                                .addComponent(jScrollPane5, javax.swing.GroupLayout.PREFERRED_SIZE, 424, javax.swing.GroupLayout.PREFERRED_SIZE))
                                                                         .addGroup(q5PanelLayout.createSequentialGroup()
-                                                                                .addGap(239, 239, 239)
-                                                                                .addGroup(q5PanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                                                                        .addGroup(q5PanelLayout.createSequentialGroup()
-                                                                                                .addComponent(onWordButton5, javax.swing.GroupLayout.PREFERRED_SIZE, 95, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                                                                                .addComponent(catWordButton5, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                                                                        .addGroup(q5PanelLayout.createSequentialGroup()
-                                                                                                .addComponent(TheWordButton5, javax.swing.GroupLayout.PREFERRED_SIZE, 95, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                                                                                .addComponent(theWordButton5, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE)))))
+                                                                                .addComponent(boxWordButton5, javax.swing.GroupLayout.PREFERRED_SIZE, 95, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                                                                .addComponent(isWordButton5, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                                                        .addGroup(q5PanelLayout.createSequentialGroup()
+                                                                                .addComponent(onWordButton5, javax.swing.GroupLayout.PREFERRED_SIZE, 95, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                                                                .addComponent(catWordButton5, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                                                        .addGroup(q5PanelLayout.createSequentialGroup()
+                                                                                .addComponent(TheWordButton5, javax.swing.GroupLayout.PREFERRED_SIZE, 95, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                                                                .addComponent(theWordButton5, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE)))
                                                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                                                 .addGroup(q5PanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                                                         .addComponent(clearButton5, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -871,6 +881,11 @@ public class OralAssessment extends javax.swing.JFrame {
                                                 .addContainerGap()
                                                 .addComponent(nextButton5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
                                 .addContainerGap())
+                        .addGroup(q5PanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, q5PanelLayout.createSequentialGroup()
+                                        .addContainerGap(33, Short.MAX_VALUE)
+                                        .addComponent(textArea5, javax.swing.GroupLayout.PREFERRED_SIZE, 419, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addContainerGap(293, Short.MAX_VALUE)))
                 );
                 q5PanelLayout.setVerticalGroup(
                         q5PanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -881,15 +896,11 @@ public class OralAssessment extends javax.swing.JFrame {
                                 .addComponent(directionLabel5)
                                 .addGap(12, 12, 12)
                                 .addComponent(q4Label1)
-                                .addGap(18, 18, 18)
-                                .addGroup(q5PanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                        .addGroup(q5PanelLayout.createSequentialGroup()
-                                                .addGap(11, 11, 11)
-                                                .addComponent(clearButton5)
-                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                                .addComponent(ReadButton5))
-                                        .addComponent(jScrollPane5, javax.swing.GroupLayout.PREFERRED_SIZE, 79, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addGap(18, 18, 18)
+                                .addGap(29, 29, 29)
+                                .addComponent(clearButton5)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(ReadButton5)
+                                .addGap(31, 31, 31)
                                 .addGroup(q5PanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                         .addComponent(isWordButton5)
                                         .addComponent(boxWordButton5))
@@ -904,7 +915,14 @@ public class OralAssessment extends javax.swing.JFrame {
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 86, Short.MAX_VALUE)
                                 .addComponent(nextButton5)
                                 .addContainerGap())
+                        .addGroup(q5PanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, q5PanelLayout.createSequentialGroup()
+                                        .addContainerGap(139, Short.MAX_VALUE)
+                                        .addComponent(textArea5, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addContainerGap(262, Short.MAX_VALUE)))
                 );
+
+                textArea1.setEditable(false);
 
                 assessmentTabbedPane.addTab("tab5", q5Panel);
 
@@ -1262,11 +1280,6 @@ public class OralAssessment extends javax.swing.JFrame {
         private javax.swing.JButton isWordButton1;
         private javax.swing.JButton isWordButton2;
         private javax.swing.JButton isWordButton5;
-        private javax.swing.JScrollPane jScrollPane1;
-        private javax.swing.JScrollPane jScrollPane2;
-        private javax.swing.JScrollPane jScrollPane3;
-        private javax.swing.JScrollPane jScrollPane4;
-        private javax.swing.JScrollPane jScrollPane5;
         private javax.swing.JButton matWordButton2;
         private javax.swing.JButton netWordButton1;
         private javax.swing.JButton nextButton1;

@@ -4,6 +4,7 @@ Core\AssessmentPage\TakeChallengeAssessment$2.class
 Core\AssessmentPage\TakeChallengeModeOfDifficulty\IntermediateTakeChallenge$27.class
 Core\AssessmentPage\TakeChallengeModeOfDifficulty\IntermediateTakeChallenge$47.class
 Core\AssessmentPage\TakeChallengeModeOfDifficulty\HardTakeChallenge$1.class
+Core\ReadNLearnForm\VideoLessons.class
 Core\AssessmentPage\TakeChallengeModeOfDifficulty\IntermediateTakeChallenge$4.class
 Core\AssessmentPage\OralAssessment$21.class
 Core\AssessmentPage\OralAssessment$27.class
@@ -18,7 +19,6 @@ Core\AssessmentPage\TakeChallengeModeOfDifficulty\IntermediateTakeChallenge$48.c
 Core\AssessmentPage\OralAssessment$41.class
 Core\AssessmentPage\TakeChallengeModeOfDifficulty\EasyTakeChallenge$35.class
 Core\AssessmentPage\TakeChallengeModeOfDifficulty\HardTakeChallenge$52.class
-Core\MyLessons.class
 Core\AssessmentPage\TakeChallengeAssessment$1.class
 Core\AssessmentPage\TakeChallengeModeOfDifficulty\IntermediateTakeChallenge$42.class
 Core\AssessmentPage\TakeChallengeModeOfDifficulty\IntermediateTakeChallenge$9.class
@@ -32,7 +32,6 @@ Core\AssessmentPage\TakeChallengeModeOfDifficulty\HardTakeChallenge$53.class
 Core\AssessmentPage\TakeChallengeModeOfDifficulty\EasyTakeChallenge$34.class
 Core\Assessment$2.class
 Core\AssessmentPage\TakeChallengeModeOfDifficulty\IntermediateTakeChallenge$26.class
-Core\MyLessons$1.class
 Core\AssessmentPage\TakeChallengeModeOfDifficulty\IntermediateTakeChallenge$43.class
 Core\AssessmentPage\TakeChallengeModeOfDifficulty\IntermediateTakeChallenge$23.class
 Core\AssessmentPage\TakeChallengeModeOfDifficulty\IntermediateTakeChallenge$53.class
@@ -42,6 +41,7 @@ Core\AssessmentPage\TakeChallengeModeOfDifficulty\IntermediateTakeChallenge$30.c
 Core\AssessmentPage\OralAssessment$36.class
 Core\AssessmentPage\OralAssessment.class
 Core\AssessmentPage\TakeChallengeModeOfDifficulty\EasyTakeChallenge$36.class
+Core\ReadNLearnForm\StoryLearning.class
 HomePage\HomePage.class
 Core\AssessmentPage\OralAssessment$10.class
 Core\AssessmentPage\OralAssessment$40.class
@@ -53,6 +53,7 @@ Core\AssessmentPage\TakeChallengeModeOfDifficulty\EasyTakeChallenge$43.class
 Core\AssessmentPage\TakeChallengeModeOfDifficulty\EasyTakeChallenge$39.class
 Core\AssessmentPage\TakeChallengeModeOfDifficulty\EasyTakeChallenge$40.class
 Core\AssessmentPage\TakeChallengeModeOfDifficulty\IntermediateTakeChallenge$19.class
+Core\ReadNLearnForm\VideoLessons$1.class
 Core\AssessmentPage\TakeChallengeModeOfDifficulty\IntermediateTakeChallenge$39.class
 Core\AssessmentPage\TakeChallengeModeOfDifficulty\IntermediateTakeChallenge$50.class
 Core\AssessmentPage\TakeChallengeModeOfDifficulty\HardTakeChallenge$51.class
@@ -63,8 +64,10 @@ Core\AssessmentPage\OralAssessment$35.class
 Core\AssessmentPage\TakeChallengeModeOfDifficulty\EasyTakeChallenge$41.class
 com\core\readease\ReadEase.class
 Core\AssessmentPage\OralAssessment$28.class
+Core\ReadNLearn$2.class
 Core\AssessmentPage\TakeChallengeModeOfDifficulty\IntermediateTakeChallenge$22.class
 Core\AssessmentPage\TakeChallengeModeOfDifficulty\IntermediateTakeChallenge$52.class
+Core\ReadNLearnForm\StoryLearning$22.class
 Core\AssessmentPage\OralAssessment$34.class
 Core\AssessmentPage\OralAssessment$29.class
 Core\AssessmentPage\TakeChallengeModeOfDifficulty\EasyTakeChallenge$42.class
@@ -78,7 +81,6 @@ Core\AssessmentPage\TakeChallengeModeOfDifficulty\IntermediateTakeChallenge$51.c
 Core\AssessmentPage\TakeChallengeModeOfDifficulty\EasyTakeChallenge$37.class
 Core\AssessmentPage\TakeChallengeModeOfDifficulty\IntermediateTakeChallenge$17.class
 Core\AssessmentPage\TakeChallengeModeOfDifficulty\IntermediateTakeChallenge$37.class
-HomePage\HomePage$5.class
 Core\AssessmentPage\TakeChallengeModeOfDifficulty\HardTakeChallenge.class
 Core\AssessmentPage\TakeChallengeModeOfDifficulty\IntermediateTakeChallenge$7.class
 Core\AssessmentPage\OralAssessment$24.class
@@ -139,6 +141,7 @@ Core\AssessmentPage\OralAssessment$7.class
 Core\AssessmentPage\OralAssessment$39.class
 Core\AssessmentPage\OralAssessment$16.class
 Core\AssessmentPage\OralAssessment$19.class
+Core\ReadNLearnForm\StoryLearning$1.class
 com\core\readease\StartingPage$1.class
 Core\AssessmentPage\TakeChallengeModeOfDifficulty\IntermediateTakeChallenge$36.class
 Core\AssessmentPage\TakeChallengeModeOfDifficulty\IntermediateTakeChallenge$28.class
