@@ -28,54 +28,22 @@ public class testJFrame extends javax.swing.JFrame {
         // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
         private void initComponents() {
 
-                jButton1 = new javax.swing.JButton();
-
                 setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-
-                jButton1.setFont(new java.awt.Font("Dialog", 0, 48)); // NOI18N
-                jButton1.setText("Show Video");
-                jButton1.addActionListener(new java.awt.event.ActionListener() {
-                        public void actionPerformed(java.awt.event.ActionEvent evt) {
-                                jButton1ActionPerformed(evt);
-                        }
-                });
 
                 javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
                 getContentPane().setLayout(layout);
                 layout.setHorizontalGroup(
                         layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addGroup(layout.createSequentialGroup()
-                                .addGap(30, 30, 30)
-                                .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 319, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addContainerGap(625, Short.MAX_VALUE))
+                        .addGap(0, 974, Short.MAX_VALUE)
                 );
                 layout.setVerticalGroup(
                         layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addGroup(layout.createSequentialGroup()
-                                .addGap(45, 45, 45)
-                                .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 206, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addContainerGap(334, Short.MAX_VALUE))
+                        .addGap(0, 585, Short.MAX_VALUE)
                 );
 
                 pack();
                 setLocationRelativeTo(null);
         }// </editor-fold>//GEN-END:initComponents
-
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        // TODO add your handling code here:
-        File file = new File("C:\\Users\\Marc\\Downloads\\LetterB.mp4");
-        if (Desktop.isDesktopSupported()) {
-            Desktop desktop = Desktop.getDesktop();
-            if (file.exists()) {
-                try {
-                    desktop.open(file);
-                } catch (IOException ex) {
-                    ex.printStackTrace();
-                }
-            }
-        }
-
-    }//GEN-LAST:event_jButton1ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -113,6 +81,5 @@ public class testJFrame extends javax.swing.JFrame {
     }
 
         // Variables declaration - do not modify//GEN-BEGIN:variables
-        private javax.swing.JButton jButton1;
         // End of variables declaration//GEN-END:variables
 }
