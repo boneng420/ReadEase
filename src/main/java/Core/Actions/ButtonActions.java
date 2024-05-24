@@ -168,6 +168,30 @@ public class ButtonActions {
         }
     }
 
+    public static void checkAnswerAndNextMultipleChoice(JTabbedPane jTabbedPane1, JRadioButton[] radioButtons, String[] correctAnswers) {
+        String[] userAnswers = new String[radioButtons.length];
+        for (int i = 0; i < radioButtons.length; i++) {
+            if (radioButtons[i].isSelected()) {
+                userAnswers[i] = radioButtons[i].getText();
+            }
+        }
+
+        int score = 0;
+        for (int i = 0; i < correctAnswers.length; i++) {
+            if (correctAnswers[i].equals(userAnswers[i])) {
+                score++;
+            }
+        }
+
+        JOptionPane.showMessageDialog(null, "You got " + score + "/" + correctAnswers.length);
+
+        // Proceed to the next tab regardless of the score
+        int selectedIndex = jTabbedPane1.getSelectedIndex();
+        if (selectedIndex + 1 < jTabbedPane1.getTabCount()) {
+            jTabbedPane1.setSelectedIndex(selectedIndex + 1);
+        }
+    }
+
     public static void toggleTextToSpeech(JToggleButton textToSpeechToggleButton) {
         if (textToSpeechToggleButton.isSelected()) {
             textToSpeechToggleButton.setBackground(Color.RED);

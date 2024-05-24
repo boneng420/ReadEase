@@ -31,7 +31,6 @@ public class HomePage extends javax.swing.JFrame {
         private void initComponents() {
 
                 ReadNLearn = new javax.swing.JButton();
-                MyLessons = new javax.swing.JButton();
                 assessmentButton = new javax.swing.JButton();
 
                 setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -46,16 +45,6 @@ public class HomePage extends javax.swing.JFrame {
                         }
                 });
                 getContentPane().add(ReadNLearn);
-
-                MyLessons.setFont(new java.awt.Font("Dialog", 0, 24)); // NOI18N
-                MyLessons.setText("My Lessons");
-                MyLessons.setPreferredSize(new java.awt.Dimension(200, 25));
-                MyLessons.addActionListener(new java.awt.event.ActionListener() {
-                        public void actionPerformed(java.awt.event.ActionEvent evt) {
-                                MyLessonsActionPerformed(evt);
-                        }
-                });
-                getContentPane().add(MyLessons);
 
                 assessmentButton.setFont(new java.awt.Font("Dialog", 0, 24)); // NOI18N
                 assessmentButton.setText("Assessment");
@@ -78,10 +67,6 @@ public class HomePage extends javax.swing.JFrame {
                 pack();
                 setLocationRelativeTo(null);
         }// </editor-fold>//GEN-END:initComponents
-
-    private void MyLessonsActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MyLessonsActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_MyLessonsActionPerformed
 
     private void ReadNLearnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ReadNLearnActionPerformed
         // TODO add your handling code here:
@@ -140,7 +125,6 @@ public class HomePage extends javax.swing.JFrame {
     }
 
         // Variables declaration - do not modify//GEN-BEGIN:variables
-        private javax.swing.JButton MyLessons;
         private javax.swing.JButton ReadNLearn;
         private javax.swing.JButton assessmentButton;
         // End of variables declaration//GEN-END:variables
