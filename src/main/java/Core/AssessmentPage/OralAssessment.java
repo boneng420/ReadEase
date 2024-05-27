@@ -5,6 +5,7 @@
 package Core.AssessmentPage;
 
 import Core.Actions.ButtonActions;
+import Core.Assessment;
 
 import javax.swing.*;
 import java.awt.*;
@@ -14,11 +15,38 @@ import java.awt.*;
  */
 public class OralAssessment extends javax.swing.JFrame {
 
-    /**
-     * Creates new form Assessment2
-     */
     public OralAssessment() {
         initComponents();
+
+        ImageIcon originalIcon = new ImageIcon(getClass().getResource("/Assessment/Oral Assessment/WetNet.png"));
+        Image originalImage = originalIcon.getImage();
+        Image scaledImage = originalImage.getScaledInstance(iconT1.getWidth(), iconT1.getHeight(), Image.SCALE_SMOOTH);
+        ImageIcon scaledIcon = new ImageIcon(scaledImage);
+        iconT1.setIcon(scaledIcon);
+
+        ImageIcon originalIconT2 = new ImageIcon(getClass().getResource("/Assessment/Oral Assessment/CatMat.png"));
+        Image originalImageT2 = originalIconT2.getImage();
+        Image scaledImageT2 = originalImageT2.getScaledInstance(iconT2.getWidth(), iconT2.getHeight(), Image.SCALE_SMOOTH);
+        ImageIcon scaledIconT2 = new ImageIcon(scaledImageT2);
+        iconT2.setIcon(scaledIconT2);
+
+        ImageIcon originalIconT3 = new ImageIcon(getClass().getResource("/Assessment/Oral Assessment/FishFins.png"));
+        Image originalImageT3 = originalIconT3.getImage();
+        Image scaledImageT3 = originalImageT3.getScaledInstance(iconT3.getWidth(), iconT3.getHeight(), Image.SCALE_SMOOTH);
+        ImageIcon scaledIconT3 = new ImageIcon(scaledImageT3);
+        iconT3.setIcon(scaledIconT3);
+
+        ImageIcon originalIconT4 = new ImageIcon(getClass().getResource("/Assessment/Oral Assessment/Apple.png"));
+        Image originalImageT4 = originalIconT4.getImage();
+        Image scaledImageT4 = originalImageT4.getScaledInstance(iconT4.getWidth(), iconT4.getHeight(), Image.SCALE_SMOOTH);
+        ImageIcon scaledIconT4 = new ImageIcon(scaledImageT4);
+        iconT4.setIcon(scaledIconT4);
+
+        ImageIcon originalIconT5 = new ImageIcon(getClass().getResource("/Assessment/Oral Assessment/CatBox.png"));
+        Image originalImageT5 = originalIconT5.getImage();
+        Image scaledImageT5 = originalImageT5.getScaledInstance(iconT5.getWidth(), iconT5.getHeight(), Image.SCALE_SMOOTH);
+        ImageIcon scaledIconT5 = new ImageIcon(scaledImageT5);
+        iconT5.setIcon(scaledIconT5);
     }
 
     /**
@@ -43,6 +71,9 @@ public class OralAssessment extends javax.swing.JFrame {
                 isWordButton1 = new javax.swing.JButton();
                 nextButton1 = new javax.swing.JButton();
                 textToSpeechToggleButton1 = new javax.swing.JToggleButton();
+                jLabel1 = new javax.swing.JLabel();
+                returnButton = new javax.swing.JButton();
+                iconT1 = new javax.swing.JLabel();
                 q2Panel = new javax.swing.JPanel();
                 q2Label = new javax.swing.JLabel();
                 directionLabel2 = new javax.swing.JLabel();
@@ -57,6 +88,7 @@ public class OralAssessment extends javax.swing.JFrame {
                 textToSpeechToggleButton2 = new javax.swing.JToggleButton();
                 catWordButton2 = new javax.swing.JButton();
                 theWordButton2 = new javax.swing.JButton();
+                iconT2 = new javax.swing.JLabel();
                 q3Panel = new javax.swing.JPanel();
                 q3Label = new javax.swing.JLabel();
                 directionLabel3 = new javax.swing.JLabel();
@@ -70,6 +102,7 @@ public class OralAssessment extends javax.swing.JFrame {
                 nextButton3 = new javax.swing.JButton();
                 textToSpeechToggleButton3 = new javax.swing.JToggleButton();
                 finsWordButton3 = new javax.swing.JButton();
+                iconT3 = new javax.swing.JLabel();
                 q4Panel = new javax.swing.JPanel();
                 q4Label = new javax.swing.JLabel();
                 directionLabel4 = new javax.swing.JLabel();
@@ -82,6 +115,7 @@ public class OralAssessment extends javax.swing.JFrame {
                 ThereWordButton4 = new javax.swing.JButton();
                 nextButton4 = new javax.swing.JButton();
                 textToSpeechToggleButton4 = new javax.swing.JToggleButton();
+                iconT4 = new javax.swing.JLabel();
                 q5Panel = new javax.swing.JPanel();
                 q4Label1 = new javax.swing.JLabel();
                 directionLabel5 = new javax.swing.JLabel();
@@ -96,8 +130,11 @@ public class OralAssessment extends javax.swing.JFrame {
                 textToSpeechToggleButton5 = new javax.swing.JToggleButton();
                 catWordButton5 = new javax.swing.JButton();
                 onWordButton5 = new javax.swing.JButton();
+                returnButton1 = new javax.swing.JButton();
+                iconT5 = new javax.swing.JLabel();
 
                 setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+                getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
                 q1Panel.setBackground(new java.awt.Color(204, 204, 204));
 
@@ -177,71 +214,100 @@ public class OralAssessment extends javax.swing.JFrame {
                         }
                 });
 
+                jLabel1.setText("jLabel1");
+
+                returnButton.setFont(new java.awt.Font("Dialog", 0, 14)); // NOI18N
+                returnButton.setText("Return");
+                returnButton.addActionListener(new java.awt.event.ActionListener() {
+                        public void actionPerformed(java.awt.event.ActionEvent evt) {
+                                returnButtonActionPerformed(evt);
+                        }
+                });
+
+                iconT1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Assessment/Oral Assessment/WetNet.png"))); // NOI18N
+                iconT1.setPreferredSize(new java.awt.Dimension(50, 15));
+
                 javax.swing.GroupLayout q1PanelLayout = new javax.swing.GroupLayout(q1Panel);
                 q1Panel.setLayout(q1PanelLayout);
                 q1PanelLayout.setHorizontalGroup(
                         q1PanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                         .addGroup(q1PanelLayout.createSequentialGroup()
+                                .addGap(670, 670, 670)
+                                .addComponent(textToSpeechToggleButton1))
+                        .addGroup(q1PanelLayout.createSequentialGroup()
+                                .addGap(28, 28, 28)
+                                .addGroup(q1PanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                        .addComponent(directionLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 672, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addGroup(q1PanelLayout.createSequentialGroup()
+                                .addGap(28, 28, 28)
+                                .addComponent(q1Label))
+                        .addGroup(q1PanelLayout.createSequentialGroup()
+                                .addGap(12, 12, 12)
+                                .addComponent(returnButton, javax.swing.GroupLayout.PREFERRED_SIZE, 336, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(115, 115, 115)
+                                .addComponent(nextButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 336, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGroup(q1PanelLayout.createSequentialGroup()
+                                .addGap(28, 28, 28)
+                                .addGroup(q1PanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                        .addComponent(iconT1, javax.swing.GroupLayout.PREFERRED_SIZE, 419, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addComponent(textArea1, javax.swing.GroupLayout.PREFERRED_SIZE, 417, javax.swing.GroupLayout.PREFERRED_SIZE))
                                 .addGroup(q1PanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                         .addGroup(q1PanelLayout.createSequentialGroup()
-                                                .addGap(28, 28, 28)
+                                                .addGap(13, 13, 13)
                                                 .addGroup(q1PanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                                        .addComponent(q1Label)
-                                                        .addComponent(directionLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 672, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                        .addGroup(q1PanelLayout.createSequentialGroup()
-                                                                .addGroup(q1PanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                                                        .addGroup(q1PanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                                                                .addGroup(q1PanelLayout.createSequentialGroup()
-                                                                                        .addComponent(wetWordButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                                                                        .addComponent(isWordButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                                                                .addGroup(q1PanelLayout.createSequentialGroup()
-                                                                                        .addComponent(netWordButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                                                                        .addComponent(TheWordButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                                                                        .addComponent(textArea1, javax.swing.GroupLayout.PREFERRED_SIZE, 417, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                                                .addGroup(q1PanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                                                        .addComponent(clearButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                                        .addComponent(readButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                                                .addGap(0, 34, Short.MAX_VALUE))
-                                        .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, q1PanelLayout.createSequentialGroup()
-                                                .addGap(0, 667, Short.MAX_VALUE)
-                                                .addComponent(textToSpeechToggleButton1))
+                                                        .addComponent(clearButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                        .addComponent(readButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE)))
                                         .addGroup(q1PanelLayout.createSequentialGroup()
-                                                .addContainerGap()
-                                                .addComponent(nextButton1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
-                                .addContainerGap())
+                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                                .addGroup(q1PanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                                        .addComponent(wetWordButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                        .addComponent(netWordButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                                .addGap(5, 5, 5)
+                                                .addGroup(q1PanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                                        .addComponent(isWordButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                        .addComponent(TheWordButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE)))))
                 );
                 q1PanelLayout.setVerticalGroup(
                         q1PanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                         .addGroup(q1PanelLayout.createSequentialGroup()
-                                .addContainerGap()
+                                .addGap(10, 10, 10)
                                 .addComponent(textToSpeechToggleButton1)
-                                .addGap(8, 8, 8)
-                                .addComponent(directionLabel)
+                                .addGap(9, 9, 9)
+                                .addGroup(q1PanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                        .addComponent(directionLabel)
+                                        .addGroup(q1PanelLayout.createSequentialGroup()
+                                                .addGap(10, 10, 10)
+                                                .addComponent(jLabel1)))
                                 .addGap(12, 12, 12)
                                 .addComponent(q1Label)
+                                .addGap(20, 20, 20)
+                                .addGroup(q1PanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                        .addComponent(textArea1, javax.swing.GroupLayout.PREFERRED_SIZE, 74, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addGroup(q1PanelLayout.createSequentialGroup()
+                                                .addGap(10, 10, 10)
+                                                .addComponent(clearButton1)
+                                                .addGap(5, 5, 5)
+                                                .addComponent(readButton1)))
                                 .addGroup(q1PanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                         .addGroup(q1PanelLayout.createSequentialGroup()
-                                                .addGap(29, 29, 29)
-                                                .addComponent(clearButton1)
-                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                                .addComponent(readButton1))
+                                                .addGap(16, 16, 16)
+                                                .addComponent(iconT1, javax.swing.GroupLayout.PREFERRED_SIZE, 185, javax.swing.GroupLayout.PREFERRED_SIZE))
                                         .addGroup(q1PanelLayout.createSequentialGroup()
-                                                .addGap(27, 27, 27)
-                                                .addComponent(textArea1, javax.swing.GroupLayout.PREFERRED_SIZE, 74, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                                .addGap(49, 49, 49)
+                                                .addGroup(q1PanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                                        .addGroup(q1PanelLayout.createSequentialGroup()
+                                                                .addComponent(wetWordButton1)
+                                                                .addGap(11, 11, 11)
+                                                                .addComponent(netWordButton1))
+                                                        .addGroup(q1PanelLayout.createSequentialGroup()
+                                                                .addComponent(isWordButton1)
+                                                                .addGap(11, 11, 11)
+                                                                .addComponent(TheWordButton1)))))
                                 .addGap(18, 18, 18)
-                                .addGroup(q1PanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                        .addComponent(netWordButton1)
-                                        .addComponent(TheWordButton1))
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addGroup(q1PanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                        .addComponent(wetWordButton1)
-                                        .addComponent(isWordButton1))
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 121, Short.MAX_VALUE)
-                                .addComponent(nextButton1)
-                                .addContainerGap())
+                                .addGroup(q1PanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                        .addComponent(returnButton)
+                                        .addComponent(nextButton1)))
                 );
 
                 textArea1.setEditable(false);
@@ -342,6 +408,9 @@ public class OralAssessment extends javax.swing.JFrame {
                         }
                 });
 
+                iconT2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Assessment/Oral Assessment/CatMat.png"))); // NOI18N
+                iconT2.setPreferredSize(new java.awt.Dimension(50, 15));
+
                 javax.swing.GroupLayout q2PanelLayout = new javax.swing.GroupLayout(q2Panel);
                 q2Panel.setLayout(q2PanelLayout);
                 q2PanelLayout.setHorizontalGroup(
@@ -351,13 +420,12 @@ public class OralAssessment extends javax.swing.JFrame {
                                         .addGroup(q2PanelLayout.createSequentialGroup()
                                                 .addGap(28, 28, 28)
                                                 .addGroup(q2PanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                                        .addComponent(q2Label)
+                                                        .addComponent(directionLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 672, javax.swing.GroupLayout.PREFERRED_SIZE)
                                                         .addGroup(q2PanelLayout.createSequentialGroup()
-                                                                .addGroup(q2PanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                                                        .addComponent(q2Label)
-                                                                        .addComponent(directionLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 672, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                                                .addGap(0, 34, Short.MAX_VALUE))
-                                                        .addGroup(q2PanelLayout.createSequentialGroup()
-                                                                .addGap(249, 249, 249)
+                                                                .addGap(14, 14, 14)
+                                                                .addComponent(iconT2, javax.swing.GroupLayout.PREFERRED_SIZE, 400, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                                                                 .addGroup(q2PanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                                                                         .addGroup(q2PanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                                                                 .addGroup(q2PanelLayout.createSequentialGroup()
@@ -367,18 +435,16 @@ public class OralAssessment extends javax.swing.JFrame {
                                                                                 .addGroup(q2PanelLayout.createSequentialGroup()
                                                                                         .addComponent(matWordButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE)
                                                                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                                                                        .addComponent(TheWordButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                                                                        .addComponent(TheWordButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                                                                .addComponent(clearButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                                                .addComponent(ReadButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE))
                                                                         .addGroup(q2PanelLayout.createSequentialGroup()
                                                                                 .addComponent(catWordButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE)
                                                                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                                                                .addComponent(theWordButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                                                .addGroup(q2PanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                                                        .addComponent(clearButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                                        .addComponent(ReadButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 204, Short.MAX_VALUE))))
+                                                                                .addComponent(theWordButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE)))))
+                                                .addGap(0, 0, Short.MAX_VALUE))
                                         .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, q2PanelLayout.createSequentialGroup()
-                                                .addGap(0, 678, Short.MAX_VALUE)
+                                                .addGap(0, 667, Short.MAX_VALUE)
                                                 .addComponent(textToSpeechToggleButton2))
                                         .addGroup(q2PanelLayout.createSequentialGroup()
                                                 .addContainerGap()
@@ -399,30 +465,35 @@ public class OralAssessment extends javax.swing.JFrame {
                                 .addComponent(directionLabel2)
                                 .addGap(12, 12, 12)
                                 .addComponent(q2Label)
-                                .addGap(29, 29, 29)
+                                .addGap(31, 31, 31)
                                 .addComponent(clearButton2)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(ReadButton2)
-                                .addGap(31, 31, 31)
-                                .addGroup(q2PanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                        .addComponent(matWordButton2)
-                                        .addComponent(TheWordButton2))
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addGroup(q2PanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                        .addComponent(isWordButton2)
-                                        .addComponent(onWordButton2))
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addGroup(q2PanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                        .addComponent(catWordButton2)
-                                        .addComponent(theWordButton2))
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 86, Short.MAX_VALUE)
-                                .addComponent(nextButton2)
+                                .addGap(29, 29, 29)
+                                .addGroup(q2PanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                        .addGroup(q2PanelLayout.createSequentialGroup()
+                                                .addGroup(q2PanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                                        .addComponent(matWordButton2)
+                                                        .addComponent(TheWordButton2))
+                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                                .addGroup(q2PanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                                        .addComponent(isWordButton2)
+                                                        .addComponent(onWordButton2))
+                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                                .addGroup(q2PanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                                        .addComponent(catWordButton2)
+                                                        .addComponent(theWordButton2))
+                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 126, Short.MAX_VALUE)
+                                                .addComponent(nextButton2))
+                                        .addGroup(q2PanelLayout.createSequentialGroup()
+                                                .addComponent(iconT2, javax.swing.GroupLayout.PREFERRED_SIZE, 167, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                .addGap(0, 0, Short.MAX_VALUE)))
                                 .addContainerGap())
                         .addGroup(q2PanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                 .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, q2PanelLayout.createSequentialGroup()
-                                        .addContainerGap(145, Short.MAX_VALUE)
+                                        .addContainerGap(165, Short.MAX_VALUE)
                                         .addComponent(textArea2, javax.swing.GroupLayout.PREFERRED_SIZE, 69, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addContainerGap(259, Short.MAX_VALUE)))
+                                        .addContainerGap(279, Short.MAX_VALUE)))
                 );
 
                 textArea1.setEditable(false);
@@ -515,81 +586,84 @@ public class OralAssessment extends javax.swing.JFrame {
                         }
                 });
 
+                iconT3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Assessment/Oral Assessment/FishFins.png"))); // NOI18N
+                iconT3.setPreferredSize(new java.awt.Dimension(50, 15));
+
                 javax.swing.GroupLayout q3PanelLayout = new javax.swing.GroupLayout(q3Panel);
                 q3Panel.setLayout(q3PanelLayout);
                 q3PanelLayout.setHorizontalGroup(
                         q3PanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                         .addGroup(q3PanelLayout.createSequentialGroup()
+                                .addGap(667, 667, 667)
+                                .addComponent(textToSpeechToggleButton3))
+                        .addGroup(q3PanelLayout.createSequentialGroup()
+                                .addGap(28, 28, 28)
+                                .addComponent(directionLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 672, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGroup(q3PanelLayout.createSequentialGroup()
+                                .addGap(28, 28, 28)
+                                .addComponent(q3Label))
+                        .addGroup(q3PanelLayout.createSequentialGroup()
+                                .addGap(45, 45, 45)
+                                .addComponent(textArea3, javax.swing.GroupLayout.PREFERRED_SIZE, 403, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(9, 9, 9)
+                                .addGroup(q3PanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                        .addComponent(clearButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addComponent(ReadButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addGroup(q3PanelLayout.createSequentialGroup()
+                                .addGap(40, 40, 40)
+                                .addComponent(iconT3, javax.swing.GroupLayout.PREFERRED_SIZE, 350, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(20, 20, 20)
                                 .addGroup(q3PanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                         .addGroup(q3PanelLayout.createSequentialGroup()
-                                                .addGap(28, 28, 28)
-                                                .addGroup(q3PanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                                        .addComponent(q3Label)
-                                                        .addComponent(directionLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 672, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                        .addGroup(q3PanelLayout.createSequentialGroup()
-                                                                .addGap(249, 249, 249)
-                                                                .addGroup(q3PanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                                                        .addGroup(q3PanelLayout.createSequentialGroup()
-                                                                                .addComponent(bigWordButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                                                                .addComponent(hasWordButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                                                        .addGroup(q3PanelLayout.createSequentialGroup()
-                                                                                .addComponent(fishWordButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                                                                .addComponent(TheWordButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                                                .addGroup(q3PanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                                                        .addComponent(clearButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                                        .addComponent(ReadButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                                                .addGap(0, 34, Short.MAX_VALUE))
-                                        .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, q3PanelLayout.createSequentialGroup()
-                                                .addGap(0, 667, Short.MAX_VALUE)
-                                                .addComponent(textToSpeechToggleButton3))
+                                                .addComponent(fishWordButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                .addGap(5, 5, 5)
+                                                .addComponent(TheWordButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE))
                                         .addGroup(q3PanelLayout.createSequentialGroup()
-                                                .addContainerGap()
-                                                .addComponent(nextButton3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
-                                .addContainerGap())
+                                                .addComponent(bigWordButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                .addGap(5, 5, 5)
+                                                .addComponent(hasWordButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                        .addGroup(q3PanelLayout.createSequentialGroup()
+                                                .addGap(50, 50, 50)
+                                                .addComponent(finsWordButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE))))
                         .addGroup(q3PanelLayout.createSequentialGroup()
-                                .addGap(324, 324, 324)
-                                .addComponent(finsWordButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                        .addGroup(q3PanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, q3PanelLayout.createSequentialGroup()
-                                        .addContainerGap(45, Short.MAX_VALUE)
-                                        .addComponent(textArea3, javax.swing.GroupLayout.PREFERRED_SIZE, 403, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addContainerGap(297, Short.MAX_VALUE)))
+                                .addGap(12, 12, 12)
+                                .addComponent(nextButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 722, javax.swing.GroupLayout.PREFERRED_SIZE))
                 );
                 q3PanelLayout.setVerticalGroup(
                         q3PanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                         .addGroup(q3PanelLayout.createSequentialGroup()
-                                .addContainerGap()
+                                .addGap(11, 11, 11)
                                 .addComponent(textToSpeechToggleButton3)
                                 .addGap(8, 8, 8)
                                 .addComponent(directionLabel3)
                                 .addGap(12, 12, 12)
                                 .addComponent(q3Label)
                                 .addGap(29, 29, 29)
-                                .addComponent(clearButton3)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(ReadButton3)
-                                .addGap(31, 31, 31)
-                                .addGroup(q3PanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                        .addComponent(fishWordButton3)
-                                        .addComponent(TheWordButton3))
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addGroup(q3PanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                        .addComponent(bigWordButton3)
-                                        .addComponent(hasWordButton3))
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(finsWordButton3)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 86, Short.MAX_VALUE)
-                                .addComponent(nextButton3)
-                                .addContainerGap())
-                        .addGroup(q3PanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, q3PanelLayout.createSequentialGroup()
-                                        .addContainerGap(150, Short.MAX_VALUE)
-                                        .addComponent(textArea3, javax.swing.GroupLayout.PREFERRED_SIZE, 59, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addContainerGap(264, Short.MAX_VALUE)))
+                                .addGroup(q3PanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                        .addGroup(q3PanelLayout.createSequentialGroup()
+                                                .addGap(1, 1, 1)
+                                                .addComponent(textArea3, javax.swing.GroupLayout.PREFERRED_SIZE, 59, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                        .addGroup(q3PanelLayout.createSequentialGroup()
+                                                .addComponent(clearButton3)
+                                                .addGap(5, 5, 5)
+                                                .addComponent(ReadButton3)))
+                                .addGap(21, 21, 21)
+                                .addGroup(q3PanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                        .addComponent(iconT3, javax.swing.GroupLayout.PREFERRED_SIZE, 180, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addGroup(q3PanelLayout.createSequentialGroup()
+                                                .addGap(40, 40, 40)
+                                                .addGroup(q3PanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                                        .addComponent(fishWordButton3)
+                                                        .addComponent(TheWordButton3))
+                                                .addGap(6, 6, 6)
+                                                .addGroup(q3PanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                                        .addComponent(bigWordButton3)
+                                                        .addComponent(hasWordButton3)
+                                                        .addGroup(q3PanelLayout.createSequentialGroup()
+                                                                .addGap(30, 30, 30)
+                                                                .addComponent(finsWordButton3)))))
+                                .addGap(23, 23, 23)
+                                .addComponent(nextButton3))
                 );
 
                 textArea1.setEditable(false);
@@ -674,75 +748,77 @@ public class OralAssessment extends javax.swing.JFrame {
                         }
                 });
 
+                iconT4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Assessment/Oral Assessment/Apple.png"))); // NOI18N
+                iconT4.setPreferredSize(new java.awt.Dimension(50, 15));
+
                 javax.swing.GroupLayout q4PanelLayout = new javax.swing.GroupLayout(q4Panel);
                 q4Panel.setLayout(q4PanelLayout);
                 q4PanelLayout.setHorizontalGroup(
                         q4PanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                         .addGroup(q4PanelLayout.createSequentialGroup()
+                                .addGap(667, 667, 667)
+                                .addComponent(textToSpeechToggleButton4))
+                        .addGroup(q4PanelLayout.createSequentialGroup()
+                                .addGap(28, 28, 28)
+                                .addComponent(directionLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 672, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGroup(q4PanelLayout.createSequentialGroup()
+                                .addGap(28, 28, 28)
+                                .addComponent(q4Label))
+                        .addGroup(q4PanelLayout.createSequentialGroup()
+                                .addGap(45, 45, 45)
+                                .addComponent(textArea4, javax.swing.GroupLayout.PREFERRED_SIZE, 405, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(7, 7, 7)
                                 .addGroup(q4PanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                        .addGroup(q4PanelLayout.createSequentialGroup()
-                                                .addGap(28, 28, 28)
-                                                .addGroup(q4PanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                                        .addComponent(q4Label)
-                                                        .addComponent(directionLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 672, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                        .addGroup(q4PanelLayout.createSequentialGroup()
-                                                                .addGap(239, 239, 239)
-                                                                .addGroup(q4PanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                                                        .addGroup(q4PanelLayout.createSequentialGroup()
-                                                                                .addComponent(areWordButton4, javax.swing.GroupLayout.PREFERRED_SIZE, 95, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                                                                .addComponent(sixWordButton4, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                                                        .addGroup(q4PanelLayout.createSequentialGroup()
-                                                                                .addComponent(applesWordButton4, javax.swing.GroupLayout.PREFERRED_SIZE, 95, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                                                                .addComponent(ThereWordButton4, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                                                .addGroup(q4PanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                                                        .addComponent(clearButton4, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                                        .addComponent(ReadButton4, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                                                .addGap(0, 34, Short.MAX_VALUE))
-                                        .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, q4PanelLayout.createSequentialGroup()
-                                                .addGap(0, 667, Short.MAX_VALUE)
-                                                .addComponent(textToSpeechToggleButton4))
-                                        .addGroup(q4PanelLayout.createSequentialGroup()
-                                                .addContainerGap()
-                                                .addComponent(nextButton4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
-                                .addContainerGap())
-                        .addGroup(q4PanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, q4PanelLayout.createSequentialGroup()
-                                        .addContainerGap(45, Short.MAX_VALUE)
-                                        .addComponent(textArea4, javax.swing.GroupLayout.PREFERRED_SIZE, 405, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addContainerGap(295, Short.MAX_VALUE)))
+                                        .addComponent(clearButton4, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addComponent(ReadButton4, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addGroup(q4PanelLayout.createSequentialGroup()
+                                .addGap(50, 50, 50)
+                                .addComponent(iconT4, javax.swing.GroupLayout.PREFERRED_SIZE, 350, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(20, 20, 20)
+                                .addGroup(q4PanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                        .addComponent(areWordButton4, javax.swing.GroupLayout.PREFERRED_SIZE, 95, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addComponent(applesWordButton4, javax.swing.GroupLayout.PREFERRED_SIZE, 95, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addGap(5, 5, 5)
+                                .addGroup(q4PanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                        .addComponent(sixWordButton4, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addComponent(ThereWordButton4, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addGroup(q4PanelLayout.createSequentialGroup()
+                                .addGap(12, 12, 12)
+                                .addComponent(nextButton4, javax.swing.GroupLayout.PREFERRED_SIZE, 722, javax.swing.GroupLayout.PREFERRED_SIZE))
                 );
                 q4PanelLayout.setVerticalGroup(
                         q4PanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                         .addGroup(q4PanelLayout.createSequentialGroup()
-                                .addContainerGap()
+                                .addGap(11, 11, 11)
                                 .addComponent(textToSpeechToggleButton4)
                                 .addGap(8, 8, 8)
                                 .addComponent(directionLabel4)
                                 .addGap(12, 12, 12)
                                 .addComponent(q4Label)
-                                .addGap(29, 29, 29)
-                                .addComponent(clearButton4)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(ReadButton4)
-                                .addGap(31, 31, 31)
+                                .addGap(19, 19, 19)
                                 .addGroup(q4PanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                        .addComponent(sixWordButton4)
-                                        .addComponent(areWordButton4))
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addGroup(q4PanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                        .addComponent(applesWordButton4)
-                                        .addComponent(ThereWordButton4))
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 125, Short.MAX_VALUE)
-                                .addComponent(nextButton4)
-                                .addContainerGap())
-                        .addGroup(q4PanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, q4PanelLayout.createSequentialGroup()
-                                        .addContainerGap(139, Short.MAX_VALUE)
                                         .addComponent(textArea4, javax.swing.GroupLayout.PREFERRED_SIZE, 77, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addContainerGap(257, Short.MAX_VALUE)))
+                                        .addGroup(q4PanelLayout.createSequentialGroup()
+                                                .addGap(10, 10, 10)
+                                                .addComponent(clearButton4)
+                                                .addGap(5, 5, 5)
+                                                .addComponent(ReadButton4)))
+                                .addGap(14, 14, 14)
+                                .addGroup(q4PanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                        .addComponent(iconT4, javax.swing.GroupLayout.PREFERRED_SIZE, 180, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addGroup(q4PanelLayout.createSequentialGroup()
+                                                .addGap(40, 40, 40)
+                                                .addGroup(q4PanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                                        .addGroup(q4PanelLayout.createSequentialGroup()
+                                                                .addComponent(areWordButton4)
+                                                                .addGap(6, 6, 6)
+                                                                .addComponent(applesWordButton4))
+                                                        .addGroup(q4PanelLayout.createSequentialGroup()
+                                                                .addComponent(sixWordButton4)
+                                                                .addGap(6, 6, 6)
+                                                                .addComponent(ThereWordButton4)))))
+                                .addGap(23, 23, 23)
+                                .addComponent(nextButton4))
                 );
 
                 textArea1.setEditable(false);
@@ -843,105 +919,102 @@ public class OralAssessment extends javax.swing.JFrame {
                         }
                 });
 
+                returnButton1.setFont(new java.awt.Font("Dialog", 0, 14)); // NOI18N
+                returnButton1.setText("Exit");
+                returnButton1.addActionListener(new java.awt.event.ActionListener() {
+                        public void actionPerformed(java.awt.event.ActionEvent evt) {
+                                returnButton1ActionPerformed(evt);
+                        }
+                });
+
+                iconT5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Assessment/Oral Assessment/CatBox.png"))); // NOI18N
+                iconT5.setPreferredSize(new java.awt.Dimension(50, 15));
+
                 javax.swing.GroupLayout q5PanelLayout = new javax.swing.GroupLayout(q5Panel);
                 q5Panel.setLayout(q5PanelLayout);
                 q5PanelLayout.setHorizontalGroup(
                         q5PanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                         .addGroup(q5PanelLayout.createSequentialGroup()
+                                .addGap(667, 667, 667)
+                                .addComponent(textToSpeechToggleButton5))
+                        .addGroup(q5PanelLayout.createSequentialGroup()
+                                .addGap(28, 28, 28)
+                                .addComponent(directionLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 672, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGroup(q5PanelLayout.createSequentialGroup()
+                                .addGap(28, 28, 28)
+                                .addComponent(q4Label1))
+                        .addGroup(q5PanelLayout.createSequentialGroup()
+                                .addGap(33, 33, 33)
+                                .addComponent(textArea5, javax.swing.GroupLayout.PREFERRED_SIZE, 419, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(5, 5, 5)
                                 .addGroup(q5PanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                        .addGroup(q5PanelLayout.createSequentialGroup()
-                                                .addGap(28, 28, 28)
-                                                .addGroup(q5PanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                                        .addComponent(q4Label1)
-                                                        .addComponent(directionLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 672, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                        .addGroup(q5PanelLayout.createSequentialGroup()
-                                                                .addGap(239, 239, 239)
-                                                                .addGroup(q5PanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                                                        .addGroup(q5PanelLayout.createSequentialGroup()
-                                                                                .addComponent(boxWordButton5, javax.swing.GroupLayout.PREFERRED_SIZE, 95, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                                                                .addComponent(isWordButton5, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                                                        .addGroup(q5PanelLayout.createSequentialGroup()
-                                                                                .addComponent(onWordButton5, javax.swing.GroupLayout.PREFERRED_SIZE, 95, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                                                                .addComponent(catWordButton5, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                                                        .addGroup(q5PanelLayout.createSequentialGroup()
-                                                                                .addComponent(TheWordButton5, javax.swing.GroupLayout.PREFERRED_SIZE, 95, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                                                                .addComponent(theWordButton5, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                                                .addGroup(q5PanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                                                        .addComponent(clearButton5, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                                        .addComponent(ReadButton5, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                                                .addGap(0, 34, Short.MAX_VALUE))
-                                        .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, q5PanelLayout.createSequentialGroup()
-                                                .addGap(0, 667, Short.MAX_VALUE)
-                                                .addComponent(textToSpeechToggleButton5))
-                                        .addGroup(q5PanelLayout.createSequentialGroup()
-                                                .addContainerGap()
-                                                .addComponent(nextButton5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
-                                .addContainerGap())
-                        .addGroup(q5PanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, q5PanelLayout.createSequentialGroup()
-                                        .addContainerGap(33, Short.MAX_VALUE)
-                                        .addComponent(textArea5, javax.swing.GroupLayout.PREFERRED_SIZE, 419, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addContainerGap(293, Short.MAX_VALUE)))
+                                        .addComponent(clearButton5, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addComponent(ReadButton5, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addGroup(q5PanelLayout.createSequentialGroup()
+                                .addGap(30, 30, 30)
+                                .addComponent(iconT5, javax.swing.GroupLayout.PREFERRED_SIZE, 350, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(20, 20, 20)
+                                .addGroup(q5PanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                        .addComponent(boxWordButton5, javax.swing.GroupLayout.PREFERRED_SIZE, 95, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addComponent(TheWordButton5, javax.swing.GroupLayout.PREFERRED_SIZE, 95, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addComponent(onWordButton5, javax.swing.GroupLayout.PREFERRED_SIZE, 95, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addGap(5, 5, 5)
+                                .addGroup(q5PanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                        .addComponent(isWordButton5, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addComponent(theWordButton5, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addComponent(catWordButton5, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addGroup(q5PanelLayout.createSequentialGroup()
+                                .addGap(12, 12, 12)
+                                .addComponent(returnButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 270, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(130, 130, 130)
+                                .addComponent(nextButton5, javax.swing.GroupLayout.PREFERRED_SIZE, 322, javax.swing.GroupLayout.PREFERRED_SIZE))
                 );
                 q5PanelLayout.setVerticalGroup(
                         q5PanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                         .addGroup(q5PanelLayout.createSequentialGroup()
-                                .addContainerGap()
+                                .addGap(11, 11, 11)
                                 .addComponent(textToSpeechToggleButton5)
                                 .addGap(8, 8, 8)
                                 .addComponent(directionLabel5)
                                 .addGap(12, 12, 12)
                                 .addComponent(q4Label1)
-                                .addGap(29, 29, 29)
-                                .addComponent(clearButton5)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(ReadButton5)
-                                .addGap(31, 31, 31)
+                                .addGap(19, 19, 19)
                                 .addGroup(q5PanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                        .addComponent(isWordButton5)
-                                        .addComponent(boxWordButton5))
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addGroup(q5PanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                        .addComponent(TheWordButton5)
-                                        .addComponent(theWordButton5))
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addGroup(q5PanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                        .addComponent(onWordButton5)
-                                        .addComponent(catWordButton5))
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 86, Short.MAX_VALUE)
-                                .addComponent(nextButton5)
-                                .addContainerGap())
-                        .addGroup(q5PanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, q5PanelLayout.createSequentialGroup()
-                                        .addContainerGap(139, Short.MAX_VALUE)
                                         .addComponent(textArea5, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addContainerGap(262, Short.MAX_VALUE)))
+                                        .addGroup(q5PanelLayout.createSequentialGroup()
+                                                .addGap(10, 10, 10)
+                                                .addComponent(clearButton5)
+                                                .addGap(5, 5, 5)
+                                                .addComponent(ReadButton5)))
+                                .addGap(19, 19, 19)
+                                .addGroup(q5PanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                        .addComponent(iconT5, javax.swing.GroupLayout.PREFERRED_SIZE, 180, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addGroup(q5PanelLayout.createSequentialGroup()
+                                                .addGap(40, 40, 40)
+                                                .addGroup(q5PanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                                        .addGroup(q5PanelLayout.createSequentialGroup()
+                                                                .addComponent(boxWordButton5)
+                                                                .addGap(6, 6, 6)
+                                                                .addComponent(TheWordButton5)
+                                                                .addGap(6, 6, 6)
+                                                                .addComponent(onWordButton5))
+                                                        .addGroup(q5PanelLayout.createSequentialGroup()
+                                                                .addComponent(isWordButton5)
+                                                                .addGap(6, 6, 6)
+                                                                .addComponent(theWordButton5)
+                                                                .addGap(6, 6, 6)
+                                                                .addComponent(catWordButton5)))))
+                                .addGap(23, 23, 23)
+                                .addGroup(q5PanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                        .addComponent(returnButton1)
+                                        .addComponent(nextButton5)))
                 );
 
                 textArea1.setEditable(false);
 
                 assessmentTabbedPane.addTab("tab5", q5Panel);
 
-                javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-                getContentPane().setLayout(layout);
-                layout.setHorizontalGroup(
-                        layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addGroup(layout.createSequentialGroup()
-                                .addGap(24, 24, 24)
-                                .addComponent(assessmentTabbedPane, javax.swing.GroupLayout.PREFERRED_SIZE, 750, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addContainerGap(26, Short.MAX_VALUE))
-                );
-                layout.setVerticalGroup(
-                        layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addGroup(layout.createSequentialGroup()
-                                .addContainerGap()
-                                .addComponent(assessmentTabbedPane, javax.swing.GroupLayout.PREFERRED_SIZE, 500, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                );
+                getContentPane().add(assessmentTabbedPane, new org.netbeans.lib.awtextra.AbsoluteConstraints(24, -28, 750, 540));
 
                 pack();
                 setLocationRelativeTo(null);
@@ -1093,7 +1166,7 @@ public class OralAssessment extends javax.swing.JFrame {
     private void nextButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_nextButton3ActionPerformed
         // TODO add your handling code here:
         String userAnswer = textArea3.getText().trim();
-        ButtonActions.checkAnswerAndNext(q3Words, userAnswer, assessmentTabbedPane, textArea3,true);
+        ButtonActions.checkAnswerAndNext(q3Words, userAnswer, assessmentTabbedPane, textArea3, true);
     }//GEN-LAST:event_nextButton3ActionPerformed
 
     private void textToSpeechToggleButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_textToSpeechToggleButton3ActionPerformed
@@ -1152,62 +1225,76 @@ public class OralAssessment extends javax.swing.JFrame {
         ButtonActions.toggleTextToSpeech(textToSpeechToggleButton4);
     }//GEN-LAST:event_textToSpeechToggleButton4ActionPerformed
 
-        private void clearButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_clearButton5ActionPerformed
-                // TODO add your handling code here:
-                ButtonActions.clearTextArea(textArea5);
-        }//GEN-LAST:event_clearButton5ActionPerformed
+    private void clearButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_clearButton5ActionPerformed
+        // TODO add your handling code here:
+        ButtonActions.clearTextArea(textArea5);
+    }//GEN-LAST:event_clearButton5ActionPerformed
 
-        private void ReadButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ReadButton5ActionPerformed
-                // TODO add your handling code here:
-                ButtonActions.readText(textArea5);
-        }//GEN-LAST:event_ReadButton5ActionPerformed
+    private void ReadButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ReadButton5ActionPerformed
+        // TODO add your handling code here:
+        ButtonActions.readText(textArea5);
+    }//GEN-LAST:event_ReadButton5ActionPerformed
 
-        private void boxWordButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_boxWordButton5ActionPerformed
-                // TODO add your handling code here:
-                textArea5.append(q5Words[5] + " ");
-                ButtonActions.speak(q5Words[5] + " ", textToSpeechToggleButton5);
-        }//GEN-LAST:event_boxWordButton5ActionPerformed
+    private void boxWordButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_boxWordButton5ActionPerformed
+        // TODO add your handling code here:
+        textArea5.append(q5Words[5] + " ");
+        ButtonActions.speak(q5Words[5] + " ", textToSpeechToggleButton5);
+    }//GEN-LAST:event_boxWordButton5ActionPerformed
 
-        private void isWordButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_isWordButton5ActionPerformed
-                // TODO add your handling code here:
-                textArea5.append(q5Words[2] + " ");
-                ButtonActions.speak(q5Words[2] + " ", textToSpeechToggleButton5);
-        }//GEN-LAST:event_isWordButton5ActionPerformed
+    private void isWordButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_isWordButton5ActionPerformed
+        // TODO add your handling code here:
+        textArea5.append(q5Words[2] + " ");
+        ButtonActions.speak(q5Words[2] + " ", textToSpeechToggleButton5);
+    }//GEN-LAST:event_isWordButton5ActionPerformed
 
-        private void TheWordButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TheWordButton5ActionPerformed
-                // TODO add your handling code here:
-                textArea5.append(q5Words[0] + " ");
-                ButtonActions.speak(q5Words[0] + " ", textToSpeechToggleButton5);
-        }//GEN-LAST:event_TheWordButton5ActionPerformed
+    private void TheWordButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TheWordButton5ActionPerformed
+        // TODO add your handling code here:
+        textArea5.append(q5Words[0] + " ");
+        ButtonActions.speak(q5Words[0] + " ", textToSpeechToggleButton5);
+    }//GEN-LAST:event_TheWordButton5ActionPerformed
 
-        private void theWordButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_theWordButton5ActionPerformed
-                // TODO add your handling code here:
-                textArea5.append(q5Words[4] + " ");
-                ButtonActions.speak(q5Words[4] + " ", textToSpeechToggleButton5);
-        }//GEN-LAST:event_theWordButton5ActionPerformed
+    private void theWordButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_theWordButton5ActionPerformed
+        // TODO add your handling code here:
+        textArea5.append(q5Words[4] + " ");
+        ButtonActions.speak(q5Words[4] + " ", textToSpeechToggleButton5);
+    }//GEN-LAST:event_theWordButton5ActionPerformed
 
-        private void nextButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_nextButton5ActionPerformed
-                // TODO add your handling code here:
-                String userAnswer = textArea5.getText().trim();
-                ButtonActions.checkAnswerAndNext(q5Words, userAnswer, assessmentTabbedPane, textArea5, true);
-        }//GEN-LAST:event_nextButton5ActionPerformed
+    private void nextButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_nextButton5ActionPerformed
+        // TODO add your handling code here:
+        String userAnswer = textArea5.getText().trim();
+        ButtonActions.checkAnswerAndNext(q5Words, userAnswer, assessmentTabbedPane, textArea5, true);
+    }//GEN-LAST:event_nextButton5ActionPerformed
 
-        private void textToSpeechToggleButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_textToSpeechToggleButton5ActionPerformed
-                // TODO add your handling code here:
-                ButtonActions.toggleTextToSpeech(textToSpeechToggleButton5);
-        }//GEN-LAST:event_textToSpeechToggleButton5ActionPerformed
+    private void textToSpeechToggleButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_textToSpeechToggleButton5ActionPerformed
+        // TODO add your handling code here:
+        ButtonActions.toggleTextToSpeech(textToSpeechToggleButton5);
+    }//GEN-LAST:event_textToSpeechToggleButton5ActionPerformed
 
-        private void catWordButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_catWordButton5ActionPerformed
-                // TODO add your handling code here:
-                textArea5.append(q5Words[1] + " ");
-                ButtonActions.speak(q5Words[1] + " ", textToSpeechToggleButton5);
-        }//GEN-LAST:event_catWordButton5ActionPerformed
+    private void catWordButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_catWordButton5ActionPerformed
+        // TODO add your handling code here:
+        textArea5.append(q5Words[1] + " ");
+        ButtonActions.speak(q5Words[1] + " ", textToSpeechToggleButton5);
+    }//GEN-LAST:event_catWordButton5ActionPerformed
 
-        private void onWordButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_onWordButton5ActionPerformed
-                // TODO add your handling code here:
-                textArea5.append(q5Words[3] + " ");
-                ButtonActions.speak(q5Words[3] + " ", textToSpeechToggleButton5);
-        }//GEN-LAST:event_onWordButton5ActionPerformed
+    private void onWordButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_onWordButton5ActionPerformed
+        // TODO add your handling code here:
+        textArea5.append(q5Words[3] + " ");
+        ButtonActions.speak(q5Words[3] + " ", textToSpeechToggleButton5);
+    }//GEN-LAST:event_onWordButton5ActionPerformed
+
+    private void returnButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_returnButtonActionPerformed
+        // TODO add your handling code here:
+        Assessment assessment = new Assessment();
+        assessment.setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_returnButtonActionPerformed
+
+    private void returnButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_returnButton1ActionPerformed
+        // TODO add your handling code here:
+        Assessment assessment = new Assessment();
+        assessment.setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_returnButton1ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -1277,9 +1364,15 @@ public class OralAssessment extends javax.swing.JFrame {
         private javax.swing.JButton finsWordButton3;
         private javax.swing.JButton fishWordButton3;
         private javax.swing.JButton hasWordButton3;
+        private javax.swing.JLabel iconT1;
+        private javax.swing.JLabel iconT2;
+        private javax.swing.JLabel iconT3;
+        private javax.swing.JLabel iconT4;
+        private javax.swing.JLabel iconT5;
         private javax.swing.JButton isWordButton1;
         private javax.swing.JButton isWordButton2;
         private javax.swing.JButton isWordButton5;
+        private javax.swing.JLabel jLabel1;
         private javax.swing.JButton matWordButton2;
         private javax.swing.JButton netWordButton1;
         private javax.swing.JButton nextButton1;
@@ -1300,6 +1393,8 @@ public class OralAssessment extends javax.swing.JFrame {
         private javax.swing.JPanel q4Panel;
         private javax.swing.JPanel q5Panel;
         private javax.swing.JButton readButton1;
+        private javax.swing.JButton returnButton;
+        private javax.swing.JButton returnButton1;
         private javax.swing.JButton sixWordButton4;
         private javax.swing.JTextArea textArea1;
         private javax.swing.JTextArea textArea2;

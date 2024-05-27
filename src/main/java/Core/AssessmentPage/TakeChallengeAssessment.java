@@ -4,6 +4,7 @@
  */
 package Core.AssessmentPage;
 
+import Core.Assessment;
 import Core.AssessmentPage.TakeChallengeModeOfDifficulty.EasyTakeChallenge;
 import Core.AssessmentPage.TakeChallengeModeOfDifficulty.HardTakeChallenge;
 import Core.AssessmentPage.TakeChallengeModeOfDifficulty.IntermediateTakeChallenge;
@@ -30,13 +31,15 @@ public class TakeChallengeAssessment extends javax.swing.JFrame {
 	@SuppressWarnings("unchecked")
         // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
         private void initComponents() {
+                java.awt.GridBagConstraints gridBagConstraints;
 
                 takeChallengeEasyButton = new javax.swing.JButton();
                 takeChallengeIntermediateButton = new javax.swing.JButton();
                 takeChallengeHardButton = new javax.swing.JButton();
+                backButton = new javax.swing.JButton();
 
                 setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-                getContentPane().setLayout(new java.awt.GridLayout(1, 0));
+                getContentPane().setLayout(new java.awt.GridBagLayout());
 
                 takeChallengeEasyButton.setFont(new java.awt.Font("Dialog", 1, 36)); // NOI18N
                 takeChallengeEasyButton.setText("Easy");
@@ -45,7 +48,15 @@ public class TakeChallengeAssessment extends javax.swing.JFrame {
                                 takeChallengeEasyButtonActionPerformed(evt);
                         }
                 });
-                getContentPane().add(takeChallengeEasyButton);
+                gridBagConstraints = new java.awt.GridBagConstraints();
+                gridBagConstraints.gridx = 0;
+                gridBagConstraints.gridy = 0;
+                gridBagConstraints.gridwidth = 2;
+                gridBagConstraints.ipadx = 109;
+                gridBagConstraints.ipady = 348;
+                gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
+                gridBagConstraints.insets = new java.awt.Insets(26, 27, 0, 0);
+                getContentPane().add(takeChallengeEasyButton, gridBagConstraints);
 
                 takeChallengeIntermediateButton.setFont(new java.awt.Font("Dialog", 1, 36)); // NOI18N
                 takeChallengeIntermediateButton.setText("Intermediate");
@@ -54,7 +65,13 @@ public class TakeChallengeAssessment extends javax.swing.JFrame {
                                 takeChallengeIntermediateButtonActionPerformed(evt);
                         }
                 });
-                getContentPane().add(takeChallengeIntermediateButton);
+                gridBagConstraints = new java.awt.GridBagConstraints();
+                gridBagConstraints.gridx = 2;
+                gridBagConstraints.gridy = 0;
+                gridBagConstraints.ipady = 348;
+                gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
+                gridBagConstraints.insets = new java.awt.Insets(26, 18, 0, 0);
+                getContentPane().add(takeChallengeIntermediateButton, gridBagConstraints);
 
                 takeChallengeHardButton.setFont(new java.awt.Font("Dialog", 1, 36)); // NOI18N
                 takeChallengeHardButton.setText("Hard");
@@ -63,7 +80,28 @@ public class TakeChallengeAssessment extends javax.swing.JFrame {
                                 takeChallengeHardButtonActionPerformed(evt);
                         }
                 });
-                getContentPane().add(takeChallengeHardButton);
+                gridBagConstraints = new java.awt.GridBagConstraints();
+                gridBagConstraints.gridx = 3;
+                gridBagConstraints.gridy = 0;
+                gridBagConstraints.ipadx = 137;
+                gridBagConstraints.ipady = 348;
+                gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
+                gridBagConstraints.insets = new java.awt.Insets(26, 18, 0, 14);
+                getContentPane().add(takeChallengeHardButton, gridBagConstraints);
+
+                backButton.setText("Back");
+                backButton.addActionListener(new java.awt.event.ActionListener() {
+                        public void actionPerformed(java.awt.event.ActionEvent evt) {
+                                backButtonActionPerformed(evt);
+                        }
+                });
+                gridBagConstraints = new java.awt.GridBagConstraints();
+                gridBagConstraints.gridx = 0;
+                gridBagConstraints.gridy = 1;
+                gridBagConstraints.ipadx = 14;
+                gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
+                gridBagConstraints.insets = new java.awt.Insets(18, 27, 37, 0);
+                getContentPane().add(backButton, gridBagConstraints);
 
                 pack();
                 setLocationRelativeTo(null);
@@ -89,6 +127,13 @@ public class TakeChallengeAssessment extends javax.swing.JFrame {
 		intermediateTakeChallenge.setVisible(true);
 		this.dispose();
         }//GEN-LAST:event_takeChallengeIntermediateButtonActionPerformed
+
+        private void backButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_backButtonActionPerformed
+                // TODO add your handling code here:
+		Assessment assessment = new Assessment();
+		assessment.setVisible(true);
+		this.dispose();
+        }//GEN-LAST:event_backButtonActionPerformed
 
 	/**
 	 * @param args the command line arguments
@@ -126,6 +171,7 @@ public class TakeChallengeAssessment extends javax.swing.JFrame {
 	}
 
         // Variables declaration - do not modify//GEN-BEGIN:variables
+        private javax.swing.JButton backButton;
         private javax.swing.JButton takeChallengeEasyButton;
         private javax.swing.JButton takeChallengeHardButton;
         private javax.swing.JButton takeChallengeIntermediateButton;

@@ -5,6 +5,8 @@
 package HomePage;
 
 import Core.Assessment;
+import Core.ReadNLearn;
+import com.core.readease.StartingPage;
 import java.awt.Color;
 import javax.swing.JButton;
 
@@ -29,24 +31,39 @@ public class HomePage extends javax.swing.JFrame {
     @SuppressWarnings("unchecked")
         // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
         private void initComponents() {
+                java.awt.GridBagConstraints gridBagConstraints;
 
                 ReadNLearn = new javax.swing.JButton();
                 assessmentButton = new javax.swing.JButton();
+                backButton = new javax.swing.JButton();
 
                 setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-                getContentPane().setLayout(new java.awt.GridLayout(1, 0));
+                getContentPane().setLayout(new java.awt.GridBagLayout());
 
-                ReadNLearn.setFont(new java.awt.Font("Dialog", 0, 24)); // NOI18N
+                ReadNLearn.setFont(new java.awt.Font("Dialog", 0, 36)); // NOI18N
                 ReadNLearn.setText("Read & Learn");
                 ReadNLearn.setPreferredSize(new java.awt.Dimension(200, 25));
+                ReadNLearn.addMouseListener(new java.awt.event.MouseAdapter() {
+                        public void mouseClicked(java.awt.event.MouseEvent evt) {
+                                ReadNLearnMouseClicked(evt);
+                        }
+                });
                 ReadNLearn.addActionListener(new java.awt.event.ActionListener() {
                         public void actionPerformed(java.awt.event.ActionEvent evt) {
                                 ReadNLearnActionPerformed(evt);
                         }
                 });
-                getContentPane().add(ReadNLearn);
+                gridBagConstraints = new java.awt.GridBagConstraints();
+                gridBagConstraints.gridx = 0;
+                gridBagConstraints.gridy = 0;
+                gridBagConstraints.gridwidth = 2;
+                gridBagConstraints.ipadx = 92;
+                gridBagConstraints.ipady = 337;
+                gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
+                gridBagConstraints.insets = new java.awt.Insets(52, 46, 0, 0);
+                getContentPane().add(ReadNLearn, gridBagConstraints);
 
-                assessmentButton.setFont(new java.awt.Font("Dialog", 0, 24)); // NOI18N
+                assessmentButton.setFont(new java.awt.Font("Dialog", 0, 36)); // NOI18N
                 assessmentButton.setText("Assessment");
                 assessmentButton.setPreferredSize(new java.awt.Dimension(200, 25));
                 assessmentButton.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -62,7 +79,28 @@ public class HomePage extends javax.swing.JFrame {
                                 assessmentButtonActionPerformed(evt);
                         }
                 });
-                getContentPane().add(assessmentButton);
+                gridBagConstraints = new java.awt.GridBagConstraints();
+                gridBagConstraints.gridx = 2;
+                gridBagConstraints.gridy = 0;
+                gridBagConstraints.ipadx = 107;
+                gridBagConstraints.ipady = 337;
+                gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
+                gridBagConstraints.insets = new java.awt.Insets(52, 11, 0, 69);
+                getContentPane().add(assessmentButton, gridBagConstraints);
+
+                backButton.setText("Back");
+                backButton.addActionListener(new java.awt.event.ActionListener() {
+                        public void actionPerformed(java.awt.event.ActionEvent evt) {
+                                backButtonActionPerformed(evt);
+                        }
+                });
+                gridBagConstraints = new java.awt.GridBagConstraints();
+                gridBagConstraints.gridx = 0;
+                gridBagConstraints.gridy = 1;
+                gridBagConstraints.ipadx = 14;
+                gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
+                gridBagConstraints.insets = new java.awt.Insets(18, 46, 37, 0);
+                getContentPane().add(backButton, gridBagConstraints);
 
                 pack();
                 setLocationRelativeTo(null);
@@ -88,6 +126,20 @@ public class HomePage extends javax.swing.JFrame {
                 // TODO add your handling code here:
 		assessmentButton.setBackground(new JButton().getBackground());
         }//GEN-LAST:event_assessmentButtonMouseExited
+
+        private void ReadNLearnMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ReadNLearnMouseClicked
+                // TODO add your handling code here:
+		ReadNLearn readNLearn = new ReadNLearn();
+		readNLearn.setVisible(true);
+		this.dispose();
+        }//GEN-LAST:event_ReadNLearnMouseClicked
+
+        private void backButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_backButtonActionPerformed
+                // TODO add your handling code here:
+		StartingPage startingPage = new StartingPage();
+		startingPage.setVisible(true);
+		this.dispose();
+        }//GEN-LAST:event_backButtonActionPerformed
 
     /**
      * @param args the command line arguments
@@ -127,5 +179,6 @@ public class HomePage extends javax.swing.JFrame {
         // Variables declaration - do not modify//GEN-BEGIN:variables
         private javax.swing.JButton ReadNLearn;
         private javax.swing.JButton assessmentButton;
+        private javax.swing.JButton backButton;
         // End of variables declaration//GEN-END:variables
 }

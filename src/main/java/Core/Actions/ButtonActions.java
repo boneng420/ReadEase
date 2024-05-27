@@ -3,14 +3,19 @@ package Core.Actions;
 import Utilities.NetworkUtils;
 import com.google.cloud.texttospeech.v1.*;
 import com.google.protobuf.ByteString;
+import uk.co.caprica.vlcj.player.component.EmbeddedMediaPlayerComponent;
 
 import javax.sound.sampled.*;
 import javax.swing.*;
 import java.awt.*;
+import java.awt.event.WindowAdapter;
+import java.awt.event.WindowEvent;
 import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.OutputStream;
+import java.util.Timer;
+import java.util.TimerTask;
 
 public class ButtonActions {
 
@@ -194,11 +199,44 @@ public class ButtonActions {
 
     public static void toggleTextToSpeech(JToggleButton textToSpeechToggleButton) {
         if (textToSpeechToggleButton.isSelected()) {
-            textToSpeechToggleButton.setBackground(Color.RED);
-            textToSpeechToggleButton.setForeground(Color.WHITE);
+//            textToSpeechToggleButton.setBackground(Color.RED);
+            textToSpeechToggleButton.setForeground(Color.RED);
         } else {
             textToSpeechToggleButton.setBackground(null);
             textToSpeechToggleButton.setForeground(null);
         }
+    }
+
+    public static void playVideoLesson(int durationInSeconds, String lessonFileName, boolean isVowel) {
+        JFrame frame = new JFrame("Video Player");
+        frame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+        frame.setSize(800, 600);
+
+        EmbeddedMediaPlayerComponent mediaPlayerComponent = new EmbeddedMediaPlayerComponent();
+        frame.add(mediaPlayerComponent, BorderLayout.CENTER);
+
+        frame.setLocationRelativeTo(null);
+        frame.setVisible(true);
+
+        String currentDirectory = System.getProperty("user.dir");
+        String videoFilePath = currentDirectory + File.separator + "src" + File.separator + "main" + File.separator + "resources" + File.separator + "Video_Lessons" + File.separator + (isVowel ? "Vowels" : "Consonants") + File.separator + lessonFileName + ".mp4";
+        mediaPlayerComponent.mediaPlayer().media().play(videoFilePath);
+
+        // Schedule a task to stop the video after the durationInSeconds of the video
+        new Timer().schedule(new TimerTask() {
+            @Override
+            public void run() {
+                mediaPlayerComponent.mediaPlayer().controls().stop();  // Stop the video
+                frame.dispose();  // Close the window
+            }
+        }, durationInSeconds * 1000);
+
+        // Add a window listener to release the media player when the JFrame is closed
+        frame.addWindowListener(new WindowAdapter() {
+            @Override
+            public void windowClosing(WindowEvent e) {
+                mediaPlayerComponent.mediaPlayer().release();
+            }
+        });
     }
 }

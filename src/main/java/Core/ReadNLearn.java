@@ -5,6 +5,8 @@
 package Core;
 
 import Core.ReadNLearnForm.StoryLearning;
+import Core.ReadNLearnForm.VideoLearning;
+import HomePage.HomePage;
 
 /**
  *
@@ -27,35 +29,87 @@ public class ReadNLearn extends javax.swing.JFrame {
 	@SuppressWarnings("unchecked")
         // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
         private void initComponents() {
+                java.awt.GridBagConstraints gridBagConstraints;
 
-                jButton1 = new javax.swing.JButton();
-                jButton2 = new javax.swing.JButton();
+                vLessonButton = new javax.swing.JButton();
+                sLearningButton = new javax.swing.JButton();
+                backButton = new javax.swing.JButton();
 
                 setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-                getContentPane().setLayout(new java.awt.GridLayout(1, 0));
+                getContentPane().setLayout(new java.awt.GridBagLayout());
 
-                jButton1.setFont(new java.awt.Font("Dialog", 0, 48)); // NOI18N
-                jButton1.setText("Video Lesson");
-                getContentPane().add(jButton1);
-
-                jButton2.setFont(new java.awt.Font("Dialog", 0, 48)); // NOI18N
-                jButton2.setText("Story Learning");
-                jButton2.addActionListener(new java.awt.event.ActionListener() {
+                vLessonButton.setFont(new java.awt.Font("Dialog", 0, 48)); // NOI18N
+                vLessonButton.setText("Video Lesson");
+                vLessonButton.addActionListener(new java.awt.event.ActionListener() {
                         public void actionPerformed(java.awt.event.ActionEvent evt) {
-                                jButton2ActionPerformed(evt);
+                                vLessonButtonActionPerformed(evt);
                         }
                 });
-                getContentPane().add(jButton2);
+                gridBagConstraints = new java.awt.GridBagConstraints();
+                gridBagConstraints.gridx = 0;
+                gridBagConstraints.gridy = 0;
+                gridBagConstraints.gridwidth = 2;
+                gridBagConstraints.ipadx = 29;
+                gridBagConstraints.ipady = 336;
+                gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
+                gridBagConstraints.insets = new java.awt.Insets(31, 38, 0, 0);
+                getContentPane().add(vLessonButton, gridBagConstraints);
+
+                sLearningButton.setFont(new java.awt.Font("Dialog", 0, 48)); // NOI18N
+                sLearningButton.setText("Story Learning");
+                sLearningButton.addActionListener(new java.awt.event.ActionListener() {
+                        public void actionPerformed(java.awt.event.ActionEvent evt) {
+                                sLearningButtonActionPerformed(evt);
+                        }
+                });
+                gridBagConstraints = new java.awt.GridBagConstraints();
+                gridBagConstraints.gridx = 2;
+                gridBagConstraints.gridy = 0;
+                gridBagConstraints.ipadx = 13;
+                gridBagConstraints.ipady = 336;
+                gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
+                gridBagConstraints.insets = new java.awt.Insets(31, 18, 0, 46);
+                getContentPane().add(sLearningButton, gridBagConstraints);
+
+                backButton.setText("Back");
+                backButton.addActionListener(new java.awt.event.ActionListener() {
+                        public void actionPerformed(java.awt.event.ActionEvent evt) {
+                                backButtonActionPerformed(evt);
+                        }
+                });
+                gridBagConstraints = new java.awt.GridBagConstraints();
+                gridBagConstraints.gridx = 0;
+                gridBagConstraints.gridy = 1;
+                gridBagConstraints.ipadx = 21;
+                gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
+                gridBagConstraints.insets = new java.awt.Insets(11, 40, 25, 0);
+                getContentPane().add(backButton, gridBagConstraints);
 
                 pack();
+                setLocationRelativeTo(null);
         }// </editor-fold>//GEN-END:initComponents
 
-        private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+        private void sLearningButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_sLearningButtonActionPerformed
                 // TODO add your handling code here:
 		StoryLearning storyLearning = new StoryLearning();
 		storyLearning.setVisible(true);
 		this.dispose();
-        }//GEN-LAST:event_jButton2ActionPerformed
+        }//GEN-LAST:event_sLearningButtonActionPerformed
+
+        private void vLessonButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_vLessonButtonActionPerformed
+                // TODO add your handling code here:
+		VideoLearning videoLearning = new VideoLearning();
+		videoLearning.setVisible(true);
+		this.dispose();
+        }//GEN-LAST:event_vLessonButtonActionPerformed
+
+        private void backButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_backButtonActionPerformed
+                // TODO add your handling code here:
+		HomePage homepage = new HomePage();
+		homepage.setVisible(true);
+		this.dispose();
+		
+        }//GEN-LAST:event_backButtonActionPerformed
 
 	/**
 	 * @param args the command line arguments
@@ -93,7 +147,8 @@ public class ReadNLearn extends javax.swing.JFrame {
 	}
 
         // Variables declaration - do not modify//GEN-BEGIN:variables
-        private javax.swing.JButton jButton1;
-        private javax.swing.JButton jButton2;
+        private javax.swing.JButton backButton;
+        private javax.swing.JButton sLearningButton;
+        private javax.swing.JButton vLessonButton;
         // End of variables declaration//GEN-END:variables
 }

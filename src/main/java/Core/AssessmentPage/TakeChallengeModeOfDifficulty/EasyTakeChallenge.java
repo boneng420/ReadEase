@@ -7,6 +7,8 @@ package Core.AssessmentPage.TakeChallengeModeOfDifficulty;
 import Core.Actions.ButtonActions;
 import Core.AssessmentPage.TakeChallengeAssessment;
 
+import javax.swing.*;
+
 /**
  * @author Marc
  */
@@ -17,6 +19,26 @@ public class EasyTakeChallenge extends javax.swing.JFrame {
      */
     public EasyTakeChallenge() {
         initComponents();
+
+            ImageIcon originalIcon = new ImageIcon(getClass().getResource("/Assessment/Take Challenge/TIGER.png"));
+            ImageIcon icon = new ImageIcon(originalIcon.getImage().getScaledInstance(iconT1.getWidth(), iconT1.getHeight(), java.awt.Image.SCALE_SMOOTH));
+            iconT1.setIcon(icon);
+
+            originalIcon = new ImageIcon(getClass().getResource("/Assessment/Take Challenge/CHAIR.png"));
+            icon = new ImageIcon(originalIcon.getImage().getScaledInstance(iconT2.getWidth(), iconT2.getHeight(), java.awt.Image.SCALE_SMOOTH));
+            iconT2.setIcon(icon);
+
+            originalIcon = new ImageIcon(getClass().getResource("/Assessment/Take Challenge/PHONE.png"));
+            icon = new ImageIcon(originalIcon.getImage().getScaledInstance(iconT3.getWidth(), iconT3.getHeight(), java.awt.Image.SCALE_SMOOTH));
+            iconT3.setIcon(icon);
+
+            originalIcon = new ImageIcon(getClass().getResource("/Assessment/Take Challenge/ZEBRA.png"));
+            icon = new ImageIcon(originalIcon.getImage().getScaledInstance(iconT4.getWidth(), iconT4.getHeight(), java.awt.Image.SCALE_SMOOTH));
+            iconT4.setIcon(icon);
+
+            originalIcon = new ImageIcon(getClass().getResource("/Assessment/Take Challenge/TABLE.png"));
+            icon = new ImageIcon(originalIcon.getImage().getScaledInstance(iconT5.getWidth(), iconT5.getHeight(), java.awt.Image.SCALE_SMOOTH));
+            iconT5.setIcon(icon);
     }
 
     /**
@@ -41,11 +63,10 @@ public class EasyTakeChallenge extends javax.swing.JFrame {
                 EButtonTC1 = new javax.swing.JButton();
                 nextButtonTC1 = new javax.swing.JButton();
                 GButtonTC1 = new javax.swing.JButton();
-                jScrollPane1 = new javax.swing.JScrollPane();
                 textAreaTC1 = new javax.swing.JTextArea();
-                jPanel3 = new javax.swing.JPanel();
                 soundToggleButtonTC1 = new javax.swing.JToggleButton();
                 returnButtonTC1 = new javax.swing.JButton();
+                iconT1 = new javax.swing.JLabel();
                 TCtabbedPane2 = new javax.swing.JPanel();
                 instructionLabelTC2 = new javax.swing.JLabel();
                 jPanel2 = new javax.swing.JPanel();
@@ -58,10 +79,9 @@ public class EasyTakeChallenge extends javax.swing.JFrame {
                 AButtonTC2 = new javax.swing.JButton();
                 nextButtonTC2 = new javax.swing.JButton();
                 HButtonTC2 = new javax.swing.JButton();
-                jScrollPane2 = new javax.swing.JScrollPane();
                 textAreaTC2 = new javax.swing.JTextArea();
-                jPanel5 = new javax.swing.JPanel();
                 soundToggleButtonTC2 = new javax.swing.JToggleButton();
+                iconT2 = new javax.swing.JLabel();
                 TCtabbedPane3 = new javax.swing.JPanel();
                 instructionLabelTC3 = new javax.swing.JLabel();
                 jPanel4 = new javax.swing.JPanel();
@@ -74,10 +94,9 @@ public class EasyTakeChallenge extends javax.swing.JFrame {
                 EButtonTC3 = new javax.swing.JButton();
                 nextButtonTC3 = new javax.swing.JButton();
                 NButtonTC3 = new javax.swing.JButton();
-                jScrollPane3 = new javax.swing.JScrollPane();
                 textAreaTC3 = new javax.swing.JTextArea();
-                jPanel6 = new javax.swing.JPanel();
                 soundToggleButtonTC3 = new javax.swing.JToggleButton();
+                iconT3 = new javax.swing.JLabel();
                 TCtabbedPane4 = new javax.swing.JPanel();
                 instructionLabelTC4 = new javax.swing.JLabel();
                 jPanel7 = new javax.swing.JPanel();
@@ -90,10 +109,9 @@ public class EasyTakeChallenge extends javax.swing.JFrame {
                 RButtonTC4 = new javax.swing.JButton();
                 nextButtonTC4 = new javax.swing.JButton();
                 ZButtonTC4 = new javax.swing.JButton();
-                jScrollPane4 = new javax.swing.JScrollPane();
                 textAreaTC4 = new javax.swing.JTextArea();
-                jPanel8 = new javax.swing.JPanel();
                 soundToggleButtonTC4 = new javax.swing.JToggleButton();
+                iconT4 = new javax.swing.JLabel();
                 TCtabbedPane5 = new javax.swing.JPanel();
                 instructionLabelTC5 = new javax.swing.JLabel();
                 jPanel9 = new javax.swing.JPanel();
@@ -106,10 +124,10 @@ public class EasyTakeChallenge extends javax.swing.JFrame {
                 LButtonTC5 = new javax.swing.JButton();
                 nextButtonTC5 = new javax.swing.JButton();
                 BButtonTC5 = new javax.swing.JButton();
-                jScrollPane5 = new javax.swing.JScrollPane();
                 textAreaTC5 = new javax.swing.JTextArea();
-                jPanel10 = new javax.swing.JPanel();
                 soundToggleButtonTC5 = new javax.swing.JToggleButton();
+                returnButtonTC5 = new javax.swing.JButton();
+                iconT5 = new javax.swing.JLabel();
 
                 setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
                 getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -212,22 +230,7 @@ public class EasyTakeChallenge extends javax.swing.JFrame {
                 textAreaTC1.setColumns(20);
                 textAreaTC1.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
                 textAreaTC1.setRows(5);
-                jScrollPane1.setViewportView(textAreaTC1);
-
-                TCtabbedPane1.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 350, 220, 70));
-
-                javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
-                jPanel3.setLayout(jPanel3Layout);
-                jPanel3Layout.setHorizontalGroup(
-                        jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addGap(0, 320, Short.MAX_VALUE)
-                );
-                jPanel3Layout.setVerticalGroup(
-                        jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addGap(0, 180, Short.MAX_VALUE)
-                );
-
-                TCtabbedPane1.add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 140, 320, 180));
+                TCtabbedPane1.add(textAreaTC1, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 340, 250, 80));
 
                 soundToggleButtonTC1.setText("Sound");
                 soundToggleButtonTC1.addActionListener(new java.awt.event.ActionListener() {
@@ -244,6 +247,10 @@ public class EasyTakeChallenge extends javax.swing.JFrame {
                         }
                 });
                 TCtabbedPane1.add(returnButtonTC1, new org.netbeans.lib.awtextra.AbsoluteConstraints(12, 485, 73, -1));
+
+                iconT1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Assessment/Take Challenge/TIGER.png"))); // NOI18N
+                iconT1.setPreferredSize(new java.awt.Dimension(50, 15));
+                TCtabbedPane1.add(iconT1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 120, 439, 209));
 
                 takeChallengeJTabbedPane.addTab("tab1", TCtabbedPane1);
 
@@ -345,22 +352,7 @@ public class EasyTakeChallenge extends javax.swing.JFrame {
                 textAreaTC2.setColumns(20);
                 textAreaTC2.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
                 textAreaTC2.setRows(5);
-                jScrollPane2.setViewportView(textAreaTC2);
-
-                TCtabbedPane2.add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 350, 220, 70));
-
-                javax.swing.GroupLayout jPanel5Layout = new javax.swing.GroupLayout(jPanel5);
-                jPanel5.setLayout(jPanel5Layout);
-                jPanel5Layout.setHorizontalGroup(
-                        jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addGap(0, 320, Short.MAX_VALUE)
-                );
-                jPanel5Layout.setVerticalGroup(
-                        jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addGap(0, 180, Short.MAX_VALUE)
-                );
-
-                TCtabbedPane2.add(jPanel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 140, 320, 180));
+                TCtabbedPane2.add(textAreaTC2, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 350, 240, 80));
 
                 soundToggleButtonTC2.setText("Sound");
                 soundToggleButtonTC2.addActionListener(new java.awt.event.ActionListener() {
@@ -369,6 +361,10 @@ public class EasyTakeChallenge extends javax.swing.JFrame {
                         }
                 });
                 TCtabbedPane2.add(soundToggleButtonTC2, new org.netbeans.lib.awtextra.AbsoluteConstraints(690, 10, -1, -1));
+
+                iconT2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Assessment/Take Challenge/CHAIR.png"))); // NOI18N
+                iconT2.setPreferredSize(new java.awt.Dimension(50, 15));
+                TCtabbedPane2.add(iconT2, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 120, 439, 209));
 
                 takeChallengeJTabbedPane.addTab("tab2", TCtabbedPane2);
 
@@ -470,22 +466,7 @@ public class EasyTakeChallenge extends javax.swing.JFrame {
                 textAreaTC3.setColumns(20);
                 textAreaTC3.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
                 textAreaTC3.setRows(5);
-                jScrollPane3.setViewportView(textAreaTC3);
-
-                TCtabbedPane3.add(jScrollPane3, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 350, 220, 70));
-
-                javax.swing.GroupLayout jPanel6Layout = new javax.swing.GroupLayout(jPanel6);
-                jPanel6.setLayout(jPanel6Layout);
-                jPanel6Layout.setHorizontalGroup(
-                        jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addGap(0, 320, Short.MAX_VALUE)
-                );
-                jPanel6Layout.setVerticalGroup(
-                        jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addGap(0, 180, Short.MAX_VALUE)
-                );
-
-                TCtabbedPane3.add(jPanel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 140, 320, 180));
+                TCtabbedPane3.add(textAreaTC3, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 360, 240, 70));
 
                 soundToggleButtonTC3.setText("Sound");
                 soundToggleButtonTC3.addActionListener(new java.awt.event.ActionListener() {
@@ -494,6 +475,10 @@ public class EasyTakeChallenge extends javax.swing.JFrame {
                         }
                 });
                 TCtabbedPane3.add(soundToggleButtonTC3, new org.netbeans.lib.awtextra.AbsoluteConstraints(690, 10, -1, -1));
+
+                iconT3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Assessment/Take Challenge/PHONE.png"))); // NOI18N
+                iconT3.setPreferredSize(new java.awt.Dimension(50, 15));
+                TCtabbedPane3.add(iconT3, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 130, 439, 209));
 
                 takeChallengeJTabbedPane.addTab("tab3", TCtabbedPane3);
 
@@ -595,22 +580,7 @@ public class EasyTakeChallenge extends javax.swing.JFrame {
                 textAreaTC4.setColumns(20);
                 textAreaTC4.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
                 textAreaTC4.setRows(5);
-                jScrollPane4.setViewportView(textAreaTC4);
-
-                TCtabbedPane4.add(jScrollPane4, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 350, 220, 70));
-
-                javax.swing.GroupLayout jPanel8Layout = new javax.swing.GroupLayout(jPanel8);
-                jPanel8.setLayout(jPanel8Layout);
-                jPanel8Layout.setHorizontalGroup(
-                        jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addGap(0, 320, Short.MAX_VALUE)
-                );
-                jPanel8Layout.setVerticalGroup(
-                        jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addGap(0, 180, Short.MAX_VALUE)
-                );
-
-                TCtabbedPane4.add(jPanel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 140, 320, 180));
+                TCtabbedPane4.add(textAreaTC4, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 360, 240, 70));
 
                 soundToggleButtonTC4.setText("Sound");
                 soundToggleButtonTC4.addActionListener(new java.awt.event.ActionListener() {
@@ -619,6 +589,10 @@ public class EasyTakeChallenge extends javax.swing.JFrame {
                         }
                 });
                 TCtabbedPane4.add(soundToggleButtonTC4, new org.netbeans.lib.awtextra.AbsoluteConstraints(690, 10, -1, -1));
+
+                iconT4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Assessment/Take Challenge/ZEBRA.png"))); // NOI18N
+                iconT4.setPreferredSize(new java.awt.Dimension(50, 15));
+                TCtabbedPane4.add(iconT4, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 130, 439, 209));
 
                 takeChallengeJTabbedPane.addTab("tab4", TCtabbedPane4);
 
@@ -720,22 +694,7 @@ public class EasyTakeChallenge extends javax.swing.JFrame {
                 textAreaTC5.setColumns(20);
                 textAreaTC5.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
                 textAreaTC5.setRows(5);
-                jScrollPane5.setViewportView(textAreaTC5);
-
-                TCtabbedPane5.add(jScrollPane5, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 350, 220, 70));
-
-                javax.swing.GroupLayout jPanel10Layout = new javax.swing.GroupLayout(jPanel10);
-                jPanel10.setLayout(jPanel10Layout);
-                jPanel10Layout.setHorizontalGroup(
-                        jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addGap(0, 320, Short.MAX_VALUE)
-                );
-                jPanel10Layout.setVerticalGroup(
-                        jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addGap(0, 180, Short.MAX_VALUE)
-                );
-
-                TCtabbedPane5.add(jPanel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 140, 320, 180));
+                TCtabbedPane5.add(textAreaTC5, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 360, 240, 70));
 
                 soundToggleButtonTC5.setText("Sound");
                 soundToggleButtonTC5.addActionListener(new java.awt.event.ActionListener() {
@@ -745,9 +704,21 @@ public class EasyTakeChallenge extends javax.swing.JFrame {
                 });
                 TCtabbedPane5.add(soundToggleButtonTC5, new org.netbeans.lib.awtextra.AbsoluteConstraints(690, 10, -1, -1));
 
+                returnButtonTC5.setText("Return");
+                returnButtonTC5.addActionListener(new java.awt.event.ActionListener() {
+                        public void actionPerformed(java.awt.event.ActionEvent evt) {
+                                returnButtonTC5ActionPerformed(evt);
+                        }
+                });
+                TCtabbedPane5.add(returnButtonTC5, new org.netbeans.lib.awtextra.AbsoluteConstraints(12, 485, 73, -1));
+
+                iconT5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Assessment/Take Challenge/TABLE.png"))); // NOI18N
+                iconT5.setPreferredSize(new java.awt.Dimension(50, 15));
+                TCtabbedPane5.add(iconT5, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 130, 439, 209));
+
                 takeChallengeJTabbedPane.addTab("tab5", TCtabbedPane5);
 
-                getContentPane().add(takeChallengeJTabbedPane, new org.netbeans.lib.awtextra.AbsoluteConstraints(12, 12, 780, 548));
+                getContentPane().add(takeChallengeJTabbedPane, new org.netbeans.lib.awtextra.AbsoluteConstraints(12, -30, 780, 590));
 
                 pack();
                 setLocationRelativeTo(null);
@@ -1020,6 +991,13 @@ public class EasyTakeChallenge extends javax.swing.JFrame {
         ButtonActions.toggleTextToSpeech(soundToggleButtonTC5);
     }//GEN-LAST:event_soundToggleButtonTC5ActionPerformed
 
+        private void returnButtonTC5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_returnButtonTC5ActionPerformed
+                // TODO add your handling code here:
+		TakeChallengeAssessment takeChallengeAssessment = new TakeChallengeAssessment();
+		takeChallengeAssessment.setVisible(true);
+		this.dispose();
+        }//GEN-LAST:event_returnButtonTC5ActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -1096,26 +1074,21 @@ public class EasyTakeChallenge extends javax.swing.JFrame {
         private javax.swing.JButton hintButtonTC3;
         private javax.swing.JButton hintButtonTC4;
         private javax.swing.JButton hintButtonTC5;
+        private javax.swing.JLabel iconT1;
+        private javax.swing.JLabel iconT2;
+        private javax.swing.JLabel iconT3;
+        private javax.swing.JLabel iconT4;
+        private javax.swing.JLabel iconT5;
         private javax.swing.JLabel instructionLabelTC1;
         private javax.swing.JLabel instructionLabelTC2;
         private javax.swing.JLabel instructionLabelTC3;
         private javax.swing.JLabel instructionLabelTC4;
         private javax.swing.JLabel instructionLabelTC5;
         private javax.swing.JPanel jPanel1;
-        private javax.swing.JPanel jPanel10;
         private javax.swing.JPanel jPanel2;
-        private javax.swing.JPanel jPanel3;
         private javax.swing.JPanel jPanel4;
-        private javax.swing.JPanel jPanel5;
-        private javax.swing.JPanel jPanel6;
         private javax.swing.JPanel jPanel7;
-        private javax.swing.JPanel jPanel8;
         private javax.swing.JPanel jPanel9;
-        private javax.swing.JScrollPane jScrollPane1;
-        private javax.swing.JScrollPane jScrollPane2;
-        private javax.swing.JScrollPane jScrollPane3;
-        private javax.swing.JScrollPane jScrollPane4;
-        private javax.swing.JScrollPane jScrollPane5;
         private javax.swing.JButton nextButtonTC1;
         private javax.swing.JButton nextButtonTC2;
         private javax.swing.JButton nextButtonTC3;
@@ -1127,6 +1100,7 @@ public class EasyTakeChallenge extends javax.swing.JFrame {
         private javax.swing.JButton readButtonTC4;
         private javax.swing.JButton readButtonTC5;
         private javax.swing.JButton returnButtonTC1;
+        private javax.swing.JButton returnButtonTC5;
         private javax.swing.JToggleButton soundToggleButtonTC1;
         private javax.swing.JToggleButton soundToggleButtonTC2;
         private javax.swing.JToggleButton soundToggleButtonTC3;

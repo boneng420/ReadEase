@@ -28,44 +28,23 @@ public class StartingPage extends javax.swing.JFrame {
         // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
         private void initComponents() {
 
-                welcomeLabel = new javax.swing.JLabel();
                 contButton = new javax.swing.JButton();
+                jLabel1 = new javax.swing.JLabel();
 
                 setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-                setPreferredSize(new java.awt.Dimension(800, 500));
+                getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-                welcomeLabel.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
-                welcomeLabel.setText("Welcome to ReadEase");
-
+                contButton.setFont(new java.awt.Font("Dialog", 0, 48)); // NOI18N
                 contButton.setText("Continue");
                 contButton.addActionListener(new java.awt.event.ActionListener() {
                         public void actionPerformed(java.awt.event.ActionEvent evt) {
                                 contButtonActionPerformed(evt);
                         }
                 });
+                getContentPane().add(contButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 370, 240, 100));
 
-                javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-                getContentPane().setLayout(layout);
-                layout.setHorizontalGroup(
-                        layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addGroup(layout.createSequentialGroup()
-                                .addGap(243, 243, 243)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                        .addComponent(welcomeLabel)
-                                        .addGroup(layout.createSequentialGroup()
-                                                .addGap(87, 87, 87)
-                                                .addComponent(contButton)))
-                                .addContainerGap(300, Short.MAX_VALUE))
-                );
-                layout.setVerticalGroup(
-                        layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addGroup(layout.createSequentialGroup()
-                                .addGap(204, 204, 204)
-                                .addComponent(welcomeLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(18, 18, 18)
-                                .addComponent(contButton)
-                                .addContainerGap(222, Short.MAX_VALUE))
-                );
+                jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/StartingPage.gif"))); // NOI18N
+                getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
 
                 pack();
                 setLocationRelativeTo(null);
@@ -124,6 +103,6 @@ public class StartingPage extends javax.swing.JFrame {
 
         // Variables declaration - do not modify//GEN-BEGIN:variables
         private javax.swing.JButton contButton;
-        private javax.swing.JLabel welcomeLabel;
+        private javax.swing.JLabel jLabel1;
         // End of variables declaration//GEN-END:variables
 }

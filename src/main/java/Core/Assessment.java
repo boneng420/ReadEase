@@ -6,6 +6,7 @@ package Core;
 
 import Core.AssessmentPage.OralAssessment;
 import Core.AssessmentPage.TakeChallengeAssessment;
+import HomePage.HomePage;
 
 /**
  * @author Marc
@@ -28,12 +29,14 @@ public class Assessment extends javax.swing.JFrame {
     @SuppressWarnings("unchecked")
         // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
         private void initComponents() {
+                java.awt.GridBagConstraints gridBagConstraints;
 
                 oralAssessmentButton = new javax.swing.JButton();
                 takeChallengeButton = new javax.swing.JButton();
+                backButton = new javax.swing.JButton();
 
                 setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-                getContentPane().setLayout(new java.awt.GridLayout());
+                getContentPane().setLayout(new java.awt.GridBagLayout());
 
                 oralAssessmentButton.setFont(new java.awt.Font("Dialog", 1, 36)); // NOI18N
                 oralAssessmentButton.setText("Oral Assessment");
@@ -42,7 +45,15 @@ public class Assessment extends javax.swing.JFrame {
                                 oralAssessmentButtonActionPerformed(evt);
                         }
                 });
-                getContentPane().add(oralAssessmentButton);
+                gridBagConstraints = new java.awt.GridBagConstraints();
+                gridBagConstraints.gridx = 0;
+                gridBagConstraints.gridy = 0;
+                gridBagConstraints.gridwidth = 2;
+                gridBagConstraints.ipadx = 17;
+                gridBagConstraints.ipady = 284;
+                gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
+                gridBagConstraints.insets = new java.awt.Insets(60, 38, 0, 0);
+                getContentPane().add(oralAssessmentButton, gridBagConstraints);
 
                 takeChallengeButton.setFont(new java.awt.Font("Dialog", 1, 36)); // NOI18N
                 takeChallengeButton.setText("Take Challenge");
@@ -51,7 +62,28 @@ public class Assessment extends javax.swing.JFrame {
                                 takeChallengeButtonActionPerformed(evt);
                         }
                 });
-                getContentPane().add(takeChallengeButton);
+                gridBagConstraints = new java.awt.GridBagConstraints();
+                gridBagConstraints.gridx = 2;
+                gridBagConstraints.gridy = 0;
+                gridBagConstraints.ipadx = 48;
+                gridBagConstraints.ipady = 284;
+                gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
+                gridBagConstraints.insets = new java.awt.Insets(60, 18, 0, 54);
+                getContentPane().add(takeChallengeButton, gridBagConstraints);
+
+                backButton.setText("Back");
+                backButton.addActionListener(new java.awt.event.ActionListener() {
+                        public void actionPerformed(java.awt.event.ActionEvent evt) {
+                                backButtonActionPerformed(evt);
+                        }
+                });
+                gridBagConstraints = new java.awt.GridBagConstraints();
+                gridBagConstraints.gridx = 0;
+                gridBagConstraints.gridy = 1;
+                gridBagConstraints.ipadx = 14;
+                gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
+                gridBagConstraints.insets = new java.awt.Insets(32, 38, 42, 0);
+                getContentPane().add(backButton, gridBagConstraints);
 
                 pack();
                 setLocationRelativeTo(null);
@@ -70,6 +102,13 @@ public class Assessment extends javax.swing.JFrame {
         takeChallengeAssessment.setVisible(true);
         this.dispose();
     }//GEN-LAST:event_takeChallengeButtonActionPerformed
+
+        private void backButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_backButtonActionPerformed
+                // TODO add your handling code here:
+		HomePage homePage = new HomePage();
+		homePage.setVisible(true);
+		this.dispose();
+        }//GEN-LAST:event_backButtonActionPerformed
 
     /**
      * @param args the command line arguments
@@ -107,6 +146,7 @@ public class Assessment extends javax.swing.JFrame {
     }
 
         // Variables declaration - do not modify//GEN-BEGIN:variables
+        private javax.swing.JButton backButton;
         private javax.swing.JButton oralAssessmentButton;
         private javax.swing.JButton takeChallengeButton;
         // End of variables declaration//GEN-END:variables

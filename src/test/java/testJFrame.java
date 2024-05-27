@@ -3,9 +3,13 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
  */
 
+import uk.co.caprica.vlcj.player.component.EmbeddedMediaPlayerComponent;
+
+import javax.swing.*;
 import java.awt.*;
 import java.io.File;
-import java.io.IOException;
+import java.util.Timer;
+import java.util.TimerTask;
 
 /**
  * @author Marc
@@ -28,22 +32,66 @@ public class testJFrame extends javax.swing.JFrame {
         // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
         private void initComponents() {
 
+                jButton1 = new javax.swing.JButton();
+
                 setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+
+                jButton1.setBackground(new java.awt.Color(153, 153, 153));
+                jButton1.setFont(new java.awt.Font("Dialog", 1, 48)); // NOI18N
+                jButton1.setText("Demo");
+                jButton1.addActionListener(new java.awt.event.ActionListener() {
+                        public void actionPerformed(java.awt.event.ActionEvent evt) {
+                                jButton1ActionPerformed(evt);
+                        }
+                });
 
                 javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
                 getContentPane().setLayout(layout);
                 layout.setHorizontalGroup(
                         layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addGap(0, 974, Short.MAX_VALUE)
+                        .addGroup(layout.createSequentialGroup()
+                                .addGap(161, 161, 161)
+                                .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 631, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addContainerGap(182, Short.MAX_VALUE))
                 );
                 layout.setVerticalGroup(
                         layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addGap(0, 585, Short.MAX_VALUE)
+                        .addGroup(layout.createSequentialGroup()
+                                .addGap(115, 115, 115)
+                                .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 341, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addContainerGap(129, Short.MAX_VALUE))
                 );
 
                 pack();
                 setLocationRelativeTo(null);
         }// </editor-fold>//GEN-END:initComponents
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {
+        JFrame frame = new JFrame("Video Player");
+        frame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+        frame.setSize(800, 600);
+
+        EmbeddedMediaPlayerComponent mediaPlayerComponent = new EmbeddedMediaPlayerComponent();
+        frame.add(mediaPlayerComponent, BorderLayout.CENTER);
+
+        frame.setLocationRelativeTo(null);
+        frame.setVisible(true);
+
+        String currentDirectory = System.getProperty("user.dir");
+        String videoFilePath = currentDirectory + File.separator + "src" + File.separator + "main" + File.separator + "resources" + File.separator + "Video_Lessons" + File.separator + "ShortVowels" + File.separator + "ShortA.mp4";
+        mediaPlayerComponent.mediaPlayer().media().play(videoFilePath);
+
+        int videoDurationInSeconds = 22;
+
+        // Schedule a task to stop the video after the duration of the video
+        new Timer().schedule(new TimerTask() {
+            @Override
+            public void run() {
+                mediaPlayerComponent.mediaPlayer().controls().stop();  // Stop the video
+                frame.dispose();  // Close the window
+            }
+        }, videoDurationInSeconds * 1000);  // Convert seconds to milliseconds
+    }
 
     /**
      * @param args the command line arguments
@@ -81,5 +129,6 @@ public class testJFrame extends javax.swing.JFrame {
     }
 
         // Variables declaration - do not modify//GEN-BEGIN:variables
+        private javax.swing.JButton jButton1;
         // End of variables declaration//GEN-END:variables
 }
